@@ -1,13 +1,16 @@
 module.exports = {
+    projectLink: 'https://github.com/Harry-Yep/Website_Harrly_Docs',
+    docsRepositoryBase: 'https://github.com/Harry-Yep/Website_Harrly_Docs/blob/main/pages/docs/',
     titleSuffix: " – Harry Yep's Docs",
     nextLinks: true,
     prevLinks: true,
     search: true,
     customSearch: null,
     darkMode: true,
+    font: false,
     footer: true,
     footerText: `Copyright ${new Date().getFullYear()} © Harry Yep. All rights reserved.`,
-    footerEditLink: `Edit this page on GitHub`,
+    footerEditLink: `Improve this page on GitHub`,
     logo: (
         <>
             <span>Harry Yep's Docs</span>
