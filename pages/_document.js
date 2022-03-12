@@ -20,21 +20,7 @@ class MyDocument extends Document {
                         rel='stylesheet'
                     />
 
-                    <script data-token={`${process.env.SPLITBEE_ANALYTICS_CODE}`} async src='https://splitbee-analytics.harisfox.com/sb.js'></script>
-
-                    <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_CODE}`} />
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.GOOGLE_ANALYTICS_CODE}', {
-              page_path: window.location.pathname,
-            });
-          `,
-                        }}
-                    />
+                    <script data-token='XLF8QST151A6' async src='https://splitbee-analytics.harisfox.com/sb.js'></script>
                 </Head>
                 <body>
                     <Main />
