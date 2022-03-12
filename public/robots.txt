@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://docs.harrly.com
+
+# Sitemaps
+Sitemap: https://docs.harrly.com/sitemap.xml
