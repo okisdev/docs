@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 <DocsHeader></DocsHeader>
 
                 <div className='container mx-auto justify-center flex-grow'>
-                    <div className='columns-1 md:columns-3'>
+                    <div className='columns-1 lg:columns-3'>
                         <DocsCard
                             title='Notion-Blog-React'
                             description='Blog powered by Notion, built with React, Next.JS, tailwindcss, TypeScript, Notion-Api-Worker and more.'
