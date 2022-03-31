@@ -2,6 +2,6 @@
 sidebar_position: 1
 ---
 
-# 你好世界
+# Hello World
 
-你好世界
+Hello World

@@ -8,7 +8,7 @@ title: Intro
 
 ## What is this
 
-Notion Blog React is a Photo Gallery powered by Notion, built with React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.
+Notion Photo React is a Photo Gallery powered by Notion, built with React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.
 
 ## TL;DR
 
