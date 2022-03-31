@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Notion Blog React": {
+    "message": "Notion Blog React",
+    "description": "The label for category Notion Blog React in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Notion Photo React": {
+    "message": "Notion Photo React",
+    "description": "The label for category Notion Photo React in sidebar tutorialSidebar"
+  }
+}

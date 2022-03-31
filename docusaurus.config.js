@@ -113,11 +113,11 @@ const config = {
                         items: [
                             {
                                 label: 'Notion Blog React',
-                                to: '/docs/intro',
+                                to: '/docs/notion-blog-react/',
                             },
                             {
                                 label: 'Notion Photo React',
-                                to: '/docs/intro',
+                                to: '/docs/notion-photo-react/',
                             },
                         ],
                     },
