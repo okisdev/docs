@@ -71,6 +71,19 @@ const config = {
         ],
     ],
 
+    i18n: {
+        defaultLocale: 'en-GB',
+        locales: ['en-GB', 'zh-CN'],
+        localeConfigs: {
+            'en-GB': {
+                htmlLang: 'en-GB',
+            },
+            'zh-CN': {
+                htmlLang: 'zh-CN',
+            },
+        },
+    },
+
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
@@ -112,6 +125,10 @@ const config = {
                         to: '/blog',
                         label: 'Blog',
                         position: 'left',
+                    },
+                    {
+                        type: 'localeDropdown',
+                        position: 'right',
                     },
                     {
                         href: 'https://github.com/Harry-Yep',
