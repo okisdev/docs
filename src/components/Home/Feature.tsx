@@ -43,7 +43,7 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
                 <h3>{title}</h3>
                 <p>{description}</p>
             </div>
-            <div>
+            <div className={styles.bar}>
                 <Link href={doc}>Docs</Link>
                 <Link href={github}>GitHub</Link>
                 <Link href={demo}>Demo</Link>

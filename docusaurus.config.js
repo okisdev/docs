@@ -56,13 +56,13 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/docs/',
+                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
                     remarkPlugins: [math],
                     rehypePlugins: [katex],
                 },
                 blog: {
                     showReadingTime: true,
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/blog/',
+                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
