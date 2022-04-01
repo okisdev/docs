@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-slug: /notion-blog-react/advanced-configuration
+slug: /notion-photo-react/advanced-configuration
 title: Advanced configuration
 ---
 
