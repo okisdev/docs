@@ -12,7 +12,7 @@ You will be able to change them in [`config/mode.config.js`](https://github.com/
 
 ## Homepage - Blog Card
 
-### Blog Information Details Display Mode
+### Blog Card Information Details Display Mode
 
 path: `home.card.mode`
 
@@ -20,12 +20,14 @@ path: `home.card.mode`
 
     ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
--   `mode: 1`
+-   `mode: 1` (default)
 
     ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
-### Blog Information Details Date - Locale
+### Blog Card Information Details Date - Locale
 
 path: `home.card.date.locale`
+
+Default: `locale: 'en-GB'`
 
 Please check [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString) for more information.

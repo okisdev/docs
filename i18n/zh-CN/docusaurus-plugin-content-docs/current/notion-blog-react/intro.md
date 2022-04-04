@@ -85,7 +85,11 @@ module.exports = {
 ### Notion API 准备工作
 
 :::tip 提示
-这将是您网站的环境变量之一，称为 `NOTION_API`。 请不要在它前面添加 `http://` 或 `https://`。
+这将是您网站的环境变量之一，称为 `NOTION_API`。
+:::
+
+:::warning 警告
+请不要在 `NOTION_API` 前面添加 `http://` 或 `https://`。
 :::
 
 如果你不想自己部署 Notion API 你可以使用 `notion-api.splitbee.io` 替代。
@@ -98,7 +102,7 @@ module.exports = {
 这将是您网站的环境变量之一，称为 `NOTION_TABLE_SLUG`。
 :::
 
-您应该创建一个具有以下属性的概念表。 （您可以从 [此处](https://harrly.notion.site/2f01c9cec94d4925b2e9aec68b0e850b) 复制模板。）
+您应该创建一个具有以下属性的 Notion 数据库。（您可以从 [此处](https://harrly.notion.site/2f01c9cec94d4925b2e9aec68b0e850b) 复制模板。）
 
 <details>
   <summary>查看每个变量的详细信息</summary>

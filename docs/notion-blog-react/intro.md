@@ -85,7 +85,11 @@ module.exports = {
 ### Notion API Preparation
 
 :::tip
-This will be one of the Environment Variable of your site, called `NOTION_API`. Please do not add `http://` or `https://` before it.
+This will be one of the Environment Variable of your site, called `NOTION_API`.
+:::
+
+:::warning
+Please do not add `http://` or `https://` before `NOTION_API`.
 :::
 
 You can use `notion-api.splitbee.io` if you don't want to make your own one.

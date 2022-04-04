@@ -12,7 +12,7 @@ title: 进阶配置
 
 ## 主页 - Blog Card
 
-### Blog 信息详情显示模式
+### Blog Card 信息详情显示模式
 
 路径: `home.card.mode`
 
@@ -20,12 +20,14 @@ title: 进阶配置
 
     ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
--   `mode: 1`
+-   `mode: 1` (默认)
 
     ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
-### Blog 信息详情显示日期 - 区域设置
+### Blog Card 信息详情显示日期 - 区域设置
 
 路径: `home.card.date.locale`
 
-请在[此处](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)查看更多信息。
+默认: `locale: 'en-GB'`
+
+更多内容请在[此处](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)查看更多信息。

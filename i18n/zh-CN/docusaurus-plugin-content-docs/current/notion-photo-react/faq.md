@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 slug: /notion-photo-react/faq
-title: Frequently Asked Questions
+title: 常见问题
 ---
 
-# Frequently Asked Questions
+# 常见问题
