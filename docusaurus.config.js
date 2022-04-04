@@ -45,6 +45,7 @@ const config = {
             require.resolve('@easyops-cn/docusaurus-search-local'),
             {
                 hashed: true,
+                language: ['en', 'zh'],
             },
         ],
     ],
@@ -127,11 +128,16 @@ const config = {
                         position: 'left',
                     },
                     {
+                        to: '/search',
+                        label: 'Search',
+                        position: 'left',
+                    },
+                    {
                         type: 'localeDropdown',
                         position: 'right',
                     },
                     {
-                        href: 'https://github.com/Harry-Yep',
+                        href: 'https://github.com/Harry-Yep/Website_Harrly_Docs',
                         label: 'GitHub',
                         position: 'right',
                     },
