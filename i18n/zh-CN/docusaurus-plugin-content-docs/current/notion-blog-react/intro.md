@@ -13,7 +13,7 @@ Notion Blog React 是一个由 Notion 提供支持，使用 React、Next.JS、ta
 ## 长话短说
 
 1. 从 GitHub Fork [**Notion Blog React**](https://github.com/Harry-Yep/Notion-Blog-React) 项目。
-2. 改变 `config/site.config.js` 文件里的内容来更改你的网页设定。
+2. 改变 [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/site.config.js) 文件里的内容来更改你的网页设定。
 3. 使用此[连接](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FHarry-Yep%2FNotion-Blog-React)导入至 Vercel。
 4. 加入两个环境变量 `NOTION_API` and `NOTION_TABLE_SLUG` 到 Vercel 配置中。
 5. 开始部署。

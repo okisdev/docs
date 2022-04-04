@@ -13,7 +13,7 @@ Notion Blog React is a Blog powered by Notion, built with React, Next.JS, tailwi
 ## TL;DR
 
 1. Fork the [**Notion Blog React**](https://github.com/Harry-Yep/Notion-Blog-React) from GitHub.
-2. Change setting in `config/site.config.js` file.
+2. Change setting in [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/site.config.js) file.
 3. Import to Vercel by clicking this quick [link](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FHarry-Yep%2FNotion-Blog-React).
 4. Add two environment variables `NOTION_API` and `NOTION_TABLE_SLUG` to Vercel configuration.
 5. Deploy it.
