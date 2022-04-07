@@ -44,7 +44,12 @@ Enter [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/b
 ```js
 module.exports = {
     global: {
-        author: 'Harry Yep', // The Blog author
+        author: {
+            name: 'Harry Yep', // The Blog author
+            github: 'https://github.com/Harry-Yep/Notion-Blog-React', // The Blog author GitHub
+            email: 'hi@harrly.com', // The Blog author email
+            privacy_policy: 'https://www.harrly.com/privacy-policy', // The Blog Privacy Policy
+        },
         site: {
             name: 'Notion Blog React Example', // The Blog title
             description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // The Blog description
