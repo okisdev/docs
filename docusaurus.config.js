@@ -171,7 +171,7 @@ const config = {
                                 href: 'https://github.com/Harry-Yep',
                             },
                             {
-                                label: 'Privacy Policy ',
+                                label: 'Privacy Policy',
                                 href: 'https://www.harrly.com/privacy-policy/',
                             },
                         ],

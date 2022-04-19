@@ -1,14 +1,14 @@
 {
   "title": {
-    "message": "Harry Yep's Documentations",
+    "message": "Harry Yep 的文档库",
     "description": "The title in the navbar"
   },
   "item.label.Docs": {
-    "message": "Docs",
+    "message": "文档",
     "description": "Navbar item with label Docs"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "博客",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
@@ -22,5 +22,9 @@
   "item.label.Notion Photo React": {
     "message": "Notion Photo React",
     "description": "Navbar item with label Notion Photo React"
+  },
+  "item.label.Search": {
+    "message": "搜索",
+    "description": "Navbar item with label Search"
   }
 }
