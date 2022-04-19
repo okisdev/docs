@@ -44,10 +44,10 @@ Notion Photo React 是一个由 Notion 提供支持，使用 React、Next.JS、t
 ```js
 module.exports = {
     global: {
-        author: 'Harry Yep', // The Photo Gallery author
+        author: 'Harry Yep', // Photo Gallery 作者
         site: {
-            name: 'Notion Photo React Example', // The Photo Gallery title
-            description: 'Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // The Photo Gallery description
+            name: 'Notion Photo React Example', // Photo Gallery 标题
+            description: 'Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // Photo Gallery 描述
             url: 'https://react-notion-blog.demo.harisfox.com/', // The Photo Gallery URL
             banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`, // The Photo Gallery Open Graph image
             language: [
@@ -133,24 +133,43 @@ url: URL (Your photo image url)
 请勿使用 [Cloudflare Pages](https://pages.cloudflare.com/)，他们目前只支持 Next.JS 静态部署。
 :::
 
-要将其部署在 Vercel 上，请访问 Vercel 并单击 `New Project` 按钮。
+1. 要将其部署在 Vercel 上，请访问 Vercel 并单击 `New Project` 按钮。
 
-![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
+    ![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
 
-导入您 `fork` 的 GitHub 存储库。
+2. 导入您 `fork` 的 GitHub 存储库。
 
-![3.import](/docs/notion-photo-react/intro/3.import.png)
+    ![3.import](/docs/notion-photo-react/intro/3.import.png)
 
-配置的结构基本是这样。
+    配置的结构基本是这样。
 
-:::info 须知
-添加 `Environment Variables` 很重要，否则部署将失败。
-:::
+    :::info 须知
+    添加 `Environment Variables` 很重要，否则部署将失败。
+    :::
 
-![4.configure](/docs/notion-photo-react/intro/4.configure.png)
+    ![4.configure](/docs/notion-photo-react/intro/4.configure.png)
 
-完成所有设置后，单击部署。
+3. 完成所有设置后，单击部署。
 
-### 访问您的网站
+4. 您可以通过 Vercel 自动生成的 URL 访问您的网站（如果是在 Vercel 部署，以 `vercel.app` 结尾）。
 
-成功部署后，您可以通过 Vercel 自动生成的 URL 访问您的网站（以 `vercel.app` 结尾）
+### 部署在本地
+
+我们现在已经完成了大部分配置，是时候部署它了。
+
+您可以通过单击 GitHub 上的 **Download ZIP** 来下载整个项目，或者如果您愿意，也可以 **Clone** 它。
+
+![5.download](/docs/notion-photo-react/intro/5.download.png)
+
+之后，请执行以下操作：
+
+1. 在 IDE（例如 **VSCode**）或终端（例如 **iterm2**）中打开您的项目。
+2. 在项目的根路径中创建一个 `.env.local`。
+3. 从 `.env.example` 复制并粘贴到 `.env.local`。
+4. 在`.env.local`中填写环境变量。
+   :::info 须知
+   添加 `Environment Variables` 很重要，否则部署将失败。
+   :::
+5. 在你的项目中运行 `yarn`。
+6. 在你的项目中运行`yarn build && yarn start`。
+7. 您现在可以通过 `http://localhost:3000` 访问您的网站。

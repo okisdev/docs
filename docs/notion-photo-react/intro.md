@@ -133,24 +133,43 @@ You can choose to deploy it on any serverless which support Next.JS framework, w
 Please don't use [Cloudflare Pages](https://pages.cloudflare.com/), they only support Next.JS Static Deploy at the moment.
 :::
 
-To deploy it on Vercel, visit Vercel and click the New Project button.
+1. To deploy it on Vercel, visit Vercel and click the New Project button.
 
-![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
+    ![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
 
-Import your forked repository.
+2. Import your forked repository.
 
-![3.import](/docs/notion-photo-react/intro/3.import.png)
+    ![3.import](/docs/notion-photo-react/intro/3.import.png)
 
-This is how configuration looks like.
+    This is how configuration looks like.
 
-:::info
-It is important to add the `Environment Variables`, else, the deployment will fail.
-:::
+    :::info
+    It is important to add the `Environment Variables`, else, the deployment will fail.
+    :::
 
-![4.configure](/docs/notion-photo-react/intro/4.configure.png)
+    ![4.configure](/docs/notion-photo-react/intro/4.configure.png)
 
-After all setup, click Deploy.
+3. After all setup, click Deploy.
 
-### Visit Your Website
+4. You can visit your website via Vercel auto-generated URL (If you deploy with Vercel, it should ending with `vercel.app`).
 
-After successfully deployed, you can visit your website via Vercel auto-generated URL (Ending with `vercel.app`)
+### Deploy it locally
+
+We have now finished the large part of configuration, it is time to deploy it.
+
+You can download your whole project by clicking the **Download ZIP** on your GitHub, or you can **clone** it if you prefer to do so.
+
+![5.download](/docs/notion-photo-react/intro/5.download.png)
+
+After that, please do the following things:
+
+1. Open your project in an IDE, such as **VSCode**, or terminal, such as **iterm2**.
+2. Create a `.env.local` in the root path of the project.
+3. Copy and paste from `.env.example` to `.env.local`.
+4. Fill in the environment variables in `.env.local`.
+   :::info
+   It is important to add the `Environment Variables`, else, the deployment will fail.
+   :::
+5. Run `yarn` in your project.
+6. Run `yarn build && yarn start` in your project.
+7. You can now able to visit your website via `http://localhost:3000`.
