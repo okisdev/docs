@@ -15,7 +15,7 @@ const config = {
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'https://cdn.harrly.com/favicon.ico',
+    favicon: 'favicon.ico',
     organizationName: 'Harry-Yep',
     projectName: 'Website_Harrly_Docs',
 
