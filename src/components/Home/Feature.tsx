@@ -39,23 +39,25 @@ const FeatureList: FeatureItem[] = [
 function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
     return (
         <div className={clsx('col col--4')}>
-            <div>
-                <img src={pic} alt={title} />
-            </div>
-            <div className='text--center padding-horiz--md'>
-                <h3>{title}</h3>
-                <p>{description}</p>
-            </div>
-            <div className={styles.bar}>
-                <Link href={doc}>
-                    <Translate id='home.feature.bar.docs'>Docs</Translate>
-                </Link>
-                <Link href={github}>
-                    <Translate id='home.feature.bar.github'>GitHub</Translate>
-                </Link>
-                <Link href={demo}>
-                    <Translate id='home.feature.bar.demo'>Demo</Translate>
-                </Link>
+            <div className={styles.box}>
+                <div>
+                    <img src={pic} alt={title} />
+                </div>
+                <div className='text--center padding-horiz--md'>
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                </div>
+                <div className={styles.bar}>
+                    <Link href={doc} className={styles.links}>
+                        <Translate id='home.feature.bar.docs'>Docs</Translate>
+                    </Link>
+                    <Link href={github} className={styles.links}>
+                        <Translate id='home.feature.bar.github'>GitHub</Translate>
+                    </Link>
+                    <Link href={demo} className={styles.links}>
+                        <Translate id='home.feature.bar.demo'>Demo</Translate>
+                    </Link>
+                </div>
             </div>
         </div>
     );
