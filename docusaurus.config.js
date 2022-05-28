@@ -16,8 +16,44 @@ const config = {
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'favicon.ico',
+
     organizationName: 'Harry-Yep',
     projectName: 'Website_Harrly_Docs',
+
+    i18n: {
+        defaultLocale: 'en-GB',
+        locales: ['en-GB', 'zh-CN'],
+        localeConfigs: {
+            'en-GB': {
+                htmlLang: 'en-GB',
+            },
+            'zh-CN': {
+                htmlLang: 'zh-CN',
+            },
+        },
+    },
+
+    presets: [
+        [
+            'classic',
+            /** @type {import('@docusaurus/preset-classic').Options} */
+            ({
+                docs: {
+                    sidebarPath: require.resolve('./sidebars.js'),
+                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
+                    remarkPlugins: [math],
+                    rehypePlugins: [katex],
+                },
+                blog: {
+                    showReadingTime: true,
+                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
+                },
+                theme: {
+                    customCss: require.resolve('./src/css/custom.css'),
+                },
+            }),
+        ],
+    ],
 
     stylesheets: [
         {
@@ -49,41 +85,6 @@ const config = {
             },
         ],
     ],
-
-    presets: [
-        [
-            'classic',
-            /** @type {import('@docusaurus/preset-classic').Options} */
-            ({
-                docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
-                    remarkPlugins: [math],
-                    rehypePlugins: [katex],
-                },
-                blog: {
-                    showReadingTime: true,
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
-                },
-                theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
-                },
-            }),
-        ],
-    ],
-
-    i18n: {
-        defaultLocale: 'en-GB',
-        locales: ['en-GB', 'zh-CN'],
-        localeConfigs: {
-            'en-GB': {
-                htmlLang: 'en-GB',
-            },
-            'zh-CN': {
-                htmlLang: 'zh-CN',
-            },
-        },
-    },
 
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
