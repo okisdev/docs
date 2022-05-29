@@ -1334,7 +1334,7 @@
     utility-types "^3.10.0"
     webpack "^5.72.1"
 
-"@docusaurus/plugin-content-docs@2.0.0-beta.21":
+"@docusaurus/plugin-content-docs@2.0.0-beta.21", "@docusaurus/plugin-content-docs@^2.0.0-beta.20":
   version "2.0.0-beta.21"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-content-docs/-/plugin-content-docs-2.0.0-beta.21.tgz#b3171fa9aed99e367b6eb7111187bd0e3dcf2949"
   integrity sha512-aa4vrzJy4xRy81wNskyhE3wzRf3AgcESZ1nfKh8xgHUkT7fDTZ1UWlg50Jb3LBCQFFyQG2XQB9N6llskI/KUnw==
@@ -1568,11 +1568,12 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@^0.26.1":
-  version "0.26.1"
-  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.26.1.tgz#a2d00e4f7ce4aaf44d31ef3adc6396d690186578"
-  integrity sha512-cX/A7+3YUmR3Az6FCpIzx7seOzcTHk6ufmr8LqewDINDzh/2rYrBDNmBi+UZvYKshG+HyEkrp9ViHzJImec8BQ==
+"@easyops-cn/docusaurus-search-local@0.27.0":
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.27.0.tgz#33eff5851e469fd038eafcfcdea845c4f4433b46"
+  integrity sha512-SHP0wwlCUvYjVspk+VPFT1hwa9HaS/LDTYEdzy1gzo4mKOOdkqSAvuQ4Qr21ZRAjfw98NM7MG+Nx0p0iaD1hzg==
   dependencies:
+    "@docusaurus/plugin-content-docs" "^2.0.0-beta.20"
     "@docusaurus/theme-common" "^2.0.0-beta.20"
     "@docusaurus/theme-translations" "^2.0.0-beta.20"
     "@docusaurus/utils" "^2.0.0-beta.20"
