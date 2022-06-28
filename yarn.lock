@@ -1463,7 +1463,7 @@
     rtlcss "^3.5.0"
     tslib "^2.4.0"
 
-"@docusaurus/theme-common@2.0.0-beta.21", "@docusaurus/theme-common@^2.0.0-beta.20":
+"@docusaurus/theme-common@2.0.0-beta.21":
   version "2.0.0-beta.21"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-common/-/theme-common-2.0.0-beta.21.tgz#508478251982d01655ef505ccb2420db38623db8"
   integrity sha512-fTKoTLRfjuFG6c3iwnVjIIOensxWMgdBKLfyE5iih3Lq7tQgkE7NyTGG9BKLrnTJ7cAD2UXdXM9xbB7tBf1qzg==
@@ -1568,13 +1568,12 @@
     cssesc "^3.0.0"
     immediate "^3.2.3"
 
-"@easyops-cn/docusaurus-search-local@0.27.1":
-  version "0.27.1"
-  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.27.1.tgz#7e5e6182a3afd11f91744555fa54a391c8de913b"
-  integrity sha512-eNGA28La4GCyscSOQsFPlLJuSNhVEAAV9XIB7CS+OYLQa116LgtuffbvZ7QlFok36J7M/f0z3uRjC0m5JyYOkQ==
+"@easyops-cn/docusaurus-search-local@0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@easyops-cn/docusaurus-search-local/-/docusaurus-search-local-0.28.0.tgz#47650e6ca74f7a3de2d3e325056e234402b9b0f9"
+  integrity sha512-/Suw8bV9oFZ9Dv39sBEyAP9zc3VMDCG2skRLu7sDCrWQedPQtB/TC9Y7WcYxd5EPd9PTfeY03VwZEQIsPuvFmw==
   dependencies:
     "@docusaurus/plugin-content-docs" "^2.0.0-beta.20"
-    "@docusaurus/theme-common" "^2.0.0-beta.20"
     "@docusaurus/theme-translations" "^2.0.0-beta.20"
     "@docusaurus/utils" "^2.0.0-beta.20"
     "@docusaurus/utils-common" "^2.0.0-beta.20"
