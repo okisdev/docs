@@ -9,8 +9,8 @@ const katex = require('rehype-katex');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Harry Yep's Documentations",
-    tagline: "Harry Yep's Documentations",
+    title: "okey's Dev Docs",
+    tagline: "okey's Dev Docs",
     url: 'https://docs.harrly.com',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -95,14 +95,14 @@ const config = {
             // },
             metadata: [
                 { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
-                { name: 'description', content: "Harry Yep's Documentations" },
+                { name: 'description', content: "okey's Dev Docs" },
                 { name: 'author', content: 'Harry Yep' },
                 { name: 'copyright', content: `Copyright © ${new Date().getFullYear()} Harry Yep.` },
-                { property: 'og:title', content: "Harry Yep's Documentations" },
-                { property: 'og:description', content: "Harry Yep's Documentations" },
+                { property: 'og:title', content: "okey's Dev Docs" },
+                { property: 'og:description', content: "okey's Dev Docs" },
             ],
             navbar: {
-                title: "Harry Yep's Documentations",
+                title: "okey's Dev Docs",
                 logo: {
                     alt: 'logo',
                     src: 'https://cdn.harrly.com/favicon.ico',
