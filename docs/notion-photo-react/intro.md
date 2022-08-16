@@ -48,7 +48,7 @@ module.exports = {
         site: {
             name: 'Notion Photo React Example', // The Photo Gallery title
             description: 'Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // The Photo Gallery description
-            url: 'https://react-notion-blog.demo.harisfox.com/', // The Photo Gallery URL
+            url: 'https://npr.okis.dev/', // The Photo Gallery URL
             banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`, // The Photo Gallery Open Graph image
             language: [
                 // The supported language of the Blog (Not recommand to change, only support **简体中文** and **British England** so far)

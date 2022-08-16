@@ -53,7 +53,7 @@ module.exports = {
         site: {
             name: 'Notion Blog React Example', // The Blog title
             description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // The Blog description
-            url: 'https://react-notion-blog.demo.harisfox.com/', // The blog URL
+            url: 'https://nbr.okis.dev/', // The blog URL
             banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`, // The Blog Open Graph image
             language: [
                 // The supported language of the Blog (Not recommand to change, only support **简体中文** and **British England** so far)

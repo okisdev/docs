@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
         description: <Translate>Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.</Translate>,
         doc: '/docs/notion-blog-react',
         github: 'https://github.com/Harry-Yep/Notion-Blog-React',
-        demo: 'https://react-notion-blog.demo.harisfox.com/',
+        demo: 'https://nbr.okis.dev/',
     },
     {
         title: 'Notion Photo React',
@@ -32,7 +32,7 @@ const FeatureList: FeatureItem[] = [
         description: <Translate>Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.</Translate>,
         doc: '/docs/notion-photo-react',
         github: 'https://github.com/Harry-Yep/Notion-Photo-React',
-        demo: 'https://react-notion-photo.demo.harisfox.com/',
+        demo: 'https://npr.okis.dev/',
     },
 ];
 
