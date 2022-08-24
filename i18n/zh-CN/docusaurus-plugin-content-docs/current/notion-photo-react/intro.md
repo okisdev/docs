@@ -12,7 +12,7 @@ Notion Photo React 是一个由 Notion 提供支持，使用 React、Next.JS、t
 
 ## 长话短说
 
-1. 从 GitHub Fork [**Notion Photo React**](https://github.com/Harry-Yep/Notion-Photo-React) 项目。
+1. 从 GitHub Fork [**Notion Photo React**](https://github.com/okisdev/Notion-Photo-React) 项目。
 2. 改变 `config/site.config.js` 文件里的内容来更改你的网页设定。
 3. 使用此[连接](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FHarry-Yep%2FNotion-Photo-React)导入至 Vercel。
 4. 加入两个环境变量 `NOTION_API` and `NOTION_TABLE_SLUG` 到 Vercel 配置中。
@@ -30,13 +30,13 @@ Notion Photo React 是一个由 Notion 提供支持，使用 React、Next.JS、t
 
 ### Fork 这个项目
 
-访问 [**Notion Photo React**](https://github.com/Harry-Yep/Notion-Photo-React) 的 GitHub 页面，然后单击右上角的 `fork`。
+访问 [**Notion Photo React**](https://github.com/okisdev/Notion-Photo-React) 的 GitHub 页面，然后单击右上角的 `fork`。
 
 ![1.project](/docs/notion-photo-react/intro/1.project.png)
 
 ### 更改站点配置
 
-进入 [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Photo-React/blob/main/config/site.config.js)，更改配置。
+进入 [`config/site.config.js`](https://github.com/okisdev/Notion-Photo-React/blob/main/config/site.config.js)，更改配置。
 
 <details>
   <summary>查看每个变量的详细信息</summary>

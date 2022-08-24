@@ -12,8 +12,8 @@ Notion Blog React is a Blog powered by Notion, built with React, Next.JS, tailwi
 
 ## TL;DR
 
-1. Fork the [**Notion Blog React**](https://github.com/Harry-Yep/Notion-Blog-React) from GitHub.
-2. Change setting in [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/site.config.js) file.
+1. Fork the [**Notion Blog React**](https://github.com/okisdev/Notion-Blog-React) from GitHub.
+2. Change setting in [`config/site.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/site.config.js) file.
 3. Import to Vercel by clicking this quick [link](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FHarry-Yep%2FNotion-Blog-React).
 4. Add two environment variables `NOTION_API` and `NOTION_TABLE_SLUG` to Vercel configuration.
 5. Deploy it.
@@ -30,13 +30,13 @@ To do the following, you need to have GitHub account ready.
 
 ### Fork this project
 
-Visiting [**Notion Blog React**](https://github.com/Harry-Yep/Notion-Blog-React) on GitHub, and click the `fork` on the top right.
+Visiting [**Notion Blog React**](https://github.com/okisdev/Notion-Blog-React) on GitHub, and click the `fork` on the top right.
 
 ![1.project](/docs/notion-blog-react/intro/1.project.png)
 
 ### Change the site configuration
 
-Enter [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/site.config.js), change the configuration.
+Enter [`config/site.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/site.config.js), change the configuration.
 
 <details>
   <summary>See details about the each variable</summary>
@@ -46,7 +46,7 @@ module.exports = {
     global: {
         author: {
             name: 'Harry Yep', // The Blog author
-            github: 'https://github.com/Harry-Yep/Notion-Blog-React', // The Blog author GitHub
+            github: 'https://github.com/okisdev/Notion-Blog-React', // The Blog author GitHub
             email: 'hi@harrly.com', // The Blog author email
             privacy_policy: 'https://www.harrly.com/privacy-policy', // The Blog Privacy Policy
         },

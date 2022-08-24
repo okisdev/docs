@@ -8,7 +8,7 @@ title: 进阶配置
 
 我们将在这里介绍一些 Notion Photo React 的可选配置。
 
-您将能够在 [`config/mode.config.js`](https://github.com/Harry-Yep/Notion-Photo-React/blob/main/config/mode.config.js) 中更改它们以进行半定制。
+您将能够在 [`config/mode.config.js`](https://github.com/okisdev/Notion-Photo-React/blob/main/config/mode.config.js) 中更改它们以进行半定制。
 
 ## 主页 - Photo Card
 

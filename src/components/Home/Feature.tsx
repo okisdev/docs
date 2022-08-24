@@ -23,7 +23,7 @@ const FeatureList: FeatureItem[] = [
         pic: 'https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png',
         description: <Translate>Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.</Translate>,
         doc: '/docs/notion-blog-react',
-        github: 'https://github.com/Harry-Yep/Notion-Blog-React',
+        github: 'https://github.com/okisdev/Notion-Blog-React',
         demo: 'https://nbr.okis.dev/',
     },
     {
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
         pic: 'https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png',
         description: <Translate>Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.</Translate>,
         doc: '/docs/notion-photo-react',
-        github: 'https://github.com/Harry-Yep/Notion-Photo-React',
+        github: 'https://github.com/okisdev/Notion-Photo-React',
         demo: 'https://npr.okis.dev/',
     },
 ];

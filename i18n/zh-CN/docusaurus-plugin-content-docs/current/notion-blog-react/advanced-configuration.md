@@ -8,7 +8,7 @@ title: 进阶配置
 
 我们将在这里介绍一些 Notion Blog React 的可选配置。
 
-您将能够在 [`config/mode.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/mode.config.js) 中更改它们以进行半定制。
+您将能够在 [`config/mode.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/mode.config.js) 中更改它们以进行半定制。
 
 ## 全局配置
 

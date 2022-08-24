@@ -12,8 +12,8 @@ Notion Photo React is a Photo Gallery powered by Notion, built with React, Next.
 
 ## TL;DR
 
-1. Fork the [**Notion Photo React**](https://github.com/Harry-Yep/Notion-Photo-React) from GitHub.
-2. Change setting in [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Photo-React/blob/main/config/site.config.js) file.
+1. Fork the [**Notion Photo React**](https://github.com/okisdev/Notion-Photo-React) from GitHub.
+2. Change setting in [`config/site.config.js`](https://github.com/okisdev/Notion-Photo-React/blob/main/config/site.config.js) file.
 3. Import to Vercel by clicking this quick [link](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2FHarry-Yep%2FNotion-Photo-React).
 4. Add two environment variables `NOTION_API` and `NOTION_TABLE_SLUG` to Vercel configuration.
 5. Deploy it.
@@ -30,13 +30,13 @@ To do the following, you need to have GitHub account ready.
 
 ### Fork this project
 
-Visiting [**Notion Photo React**](https://github.com/Harry-Yep/Notion-Photo-React) on GitHub, and click the `fork` on the top right.
+Visiting [**Notion Photo React**](https://github.com/okisdev/Notion-Photo-React) on GitHub, and click the `fork` on the top right.
 
 ![1.project](/docs/notion-photo-react/intro/1.project.png)
 
 ### Change the site configuration
 
-Enter [`config/site.config.js`](https://github.com/Harry-Yep/Notion-Photo-React/blob/main/config/site.config.js), change the configuration.
+Enter [`config/site.config.js`](https://github.com/okisdev/Notion-Photo-React/blob/main/config/site.config.js), change the configuration.
 
 <details>
   <summary>See details about the each variable</summary>

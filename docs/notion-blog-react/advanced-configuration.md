@@ -8,7 +8,7 @@ title: Advanced configuration
 
 We'll cover some optional modes for Notion Blog React.
 
-You will be able to change them in [`config/mode.config.js`](https://github.com/Harry-Yep/Notion-Blog-React/blob/main/config/mode.config.js) for semi-customization.
+You will be able to change them in [`config/mode.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/mode.config.js) for semi-customization.
 
 ## Global Configuration
 

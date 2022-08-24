@@ -40,13 +40,13 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
+                    editUrl: 'https://github.com/okisdev/Website_Harrly_Docs/edit/main/',
                     remarkPlugins: [math],
                     rehypePlugins: [katex],
                 },
                 blog: {
                     showReadingTime: true,
-                    editUrl: 'https://github.com/Harry-Yep/Website_Harrly_Docs/edit/main/',
+                    editUrl: 'https://github.com/okisdev/Website_Harrly_Docs/edit/main/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
@@ -138,7 +138,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        href: 'https://github.com/Harry-Yep/Website_Harrly_Docs',
+                        href: 'https://github.com/okisdev/Website_Harrly_Docs',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -169,7 +169,7 @@ const config = {
                             },
                             {
                                 label: 'GitHub',
-                                href: 'https://github.com/Harry-Yep',
+                                href: 'https://github.com/okisdev',
                             },
                             {
                                 label: 'Privacy Policy',
