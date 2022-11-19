@@ -72,7 +72,7 @@ const config = {
             async: true,
             defer: true,
             'data-website-id': '3738d376-31d5-49fa-9d29-fabb1a422195',
-            src: 'https://umami.harisfox.com/umami.js',
+            src: 'https://umami.harisfox.com/script.js',
         },
         {
             async: true,
