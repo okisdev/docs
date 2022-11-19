@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 // Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
@@ -11,14 +11,14 @@ const katex = require('rehype-katex');
 const config = {
     title: "okey's Dev Docs",
     tagline: "okey's Dev Docs",
-    url: 'https://docs.harrly.com',
+    url: 'https://docs.okis.dev',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'favicon.ico',
 
-    organizationName: 'Harry-Yep',
-    projectName: 'Website_Harrly_Docs',
+    organizationName: 'okisdev',
+    projectName: 'docs',
 
     i18n: {
         defaultLocale: 'en-GB',
@@ -40,16 +40,19 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    editUrl: 'https://github.com/okisdev/Website_Harrly_Docs/edit/main/',
+                    editUrl: 'https://github.com/okisdev/docs/edit/main/',
                     remarkPlugins: [math],
                     rehypePlugins: [katex],
-                },
-                blog: {
-                    showReadingTime: true,
-                    editUrl: 'https://github.com/okisdev/Website_Harrly_Docs/edit/main/',
+                    routeBasePath: '/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
+                },
+                sitemap: {
+                    changefreq: 'weekly',
+                    priority: 0.5,
+                    ignorePatterns: ['/tags/**'],
+                    filename: 'sitemap.xml',
                 },
             }),
         ],
@@ -67,12 +70,15 @@ const config = {
     scripts: [
         {
             async: true,
-            src: 'https://splitbee.hode.co.uk/sb.js',
-            'data-token': 'XLF8QST151A6',
+            defer: true,
+            'data-website-id': '3738d376-31d5-49fa-9d29-fabb1a422195',
+            src: 'https://umami.harisfox.com/umami.js',
         },
         {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=UA-183901953-4',
+            defer: true,
+            'data-website-id': 'd0053199-edb6-42b9-bcf5-2796c05f1721',
+            src: 'https://analytics.umami.is/script.js',
         },
     ],
 
@@ -82,6 +88,7 @@ const config = {
             {
                 hashed: true,
                 language: ['en', 'zh'],
+                docsRouteBasePath: '/',
             },
         ],
     ],
@@ -115,19 +122,15 @@ const config = {
                         items: [
                             {
                                 label: 'Notion Blog React',
-                                to: '/docs/notion-blog-react/',
+                                to: '/notion-blog-react/',
                             },
                             {
                                 label: 'Notion Photo React',
-                                to: '/docs/notion-photo-react/',
+                                to: '/notion-photo-react/',
                             },
                         ],
                     },
-                    {
-                        to: '/blog',
-                        label: 'Blog',
-                        position: 'left',
-                    },
+
                     {
                         to: '/search',
                         label: 'Search',
@@ -138,7 +141,7 @@ const config = {
                         position: 'right',
                     },
                     {
-                        href: 'https://github.com/okisdev/Website_Harrly_Docs',
+                        href: 'https://github.com/okisdev/docs',
                         label: 'GitHub',
                         position: 'right',
                     },
@@ -152,11 +155,11 @@ const config = {
                         items: [
                             {
                                 label: 'Notion Blog React',
-                                to: '/docs/notion-blog-react/',
+                                to: '/notion-blog-react/',
                             },
                             {
                                 label: 'Notion Photo React',
-                                to: '/docs/notion-photo-react/',
+                                to: '/notion-photo-react/',
                             },
                         ],
                     },
@@ -165,15 +168,11 @@ const config = {
                         items: [
                             {
                                 label: 'Blog',
-                                href: 'https://blog.harrly.com/',
+                                href: 'https://harrly.com/blog',
                             },
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/okisdev',
-                            },
-                            {
-                                label: 'Privacy Policy',
-                                href: 'https://www.harrly.com/privacy-policy/',
                             },
                         ],
                     },
