@@ -20,7 +20,7 @@
     "@easyops-cn/docusaurus-search-local": "0.33.6",
     "@mdx-js/react": "1.6.22",
     "clsx": "1.2.1",
-    "hast-util-is-element": "2.1.2",
+    "hast-util-is-element": "2.1.3",
     "prism-react-renderer": "1.3.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
