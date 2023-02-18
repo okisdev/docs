@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 slug: /notion-blog-react
-title: Intro
+title: Notion Blog React Documentation
 ---
 
 # Notion Blog React Documentation

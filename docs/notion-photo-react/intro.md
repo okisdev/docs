@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 slug: /notion-photo-react
-title: Intro
+title: Notion Photo React Documentation
 ---
 
 # Notion Photo React Documentation
