@@ -161,6 +161,10 @@ const config = {
                                 label: 'Notion Photo React',
                                 to: '/notion-photo-react/',
                             },
+                            {
+                                label: 'TfL Tube',
+                                to: '/tfl-tube/',
+                            },
                         ],
                     },
                     {
@@ -173,6 +177,10 @@ const config = {
                             {
                                 label: 'GitHub',
                                 href: 'https://github.com/okisdev',
+                            },
+                            {
+                                label: 'Twitter',
+                                href: 'https://twitter.com/okisdev',
                             },
                         ],
                     },
