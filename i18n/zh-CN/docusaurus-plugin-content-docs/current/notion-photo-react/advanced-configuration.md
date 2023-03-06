@@ -12,18 +12,6 @@ title: 进阶配置
 
 ## 主页 - Photo Card
 
-### Photo Card 信息详情显示模式
-
-路径: `home.card.mode`
-
--   `mode: 0`
-
-    ![home.photo.card.mode.0.png](/docs/notion-photo-react/advanced-configuration/home.photo.card.mode.0.png)
-
--   `mode: 1` (默认)
-
-    ![home.photo.card.mode.1.png](/docs/notion-photo-react/advanced-configuration/home.photo.card.mode.1.png)
-
 ### Photo Card 信息详情显示日期 - 区域设置
 
 路径: `home.card.date.locale`

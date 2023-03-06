@@ -12,18 +12,6 @@ You will be able to change them in [`config/mode.config.js`](https://github.com/
 
 ## Homepage - Photo Card
 
-### Photo Card Information Details Display Mode
-
-path: `home.card.mode`
-
--   `mode: 0`
-
-    ![home.blog.card.mode.0.png](/docs/notion-photo-react/advanced-configuration/home.photo.card.mode.0.png)
-
--   `mode: 1` (default)
-
-    ![home.blog.card.mode.1.png](/docs/notion-photo-react/advanced-configuration/home.photo.card.mode.1.png)
-
 ### Photo Card Information Details Date - Locale
 
 path: `home.card.date.locale`

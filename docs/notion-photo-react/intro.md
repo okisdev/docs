@@ -42,38 +42,54 @@ Enter [`config/site.config.js`](https://github.com/okisdev/Notion-Photo-React/bl
   <summary>See details about the each variable</summary>
 
 ```js
+// Before you make changes to this document, please read https://docs.okis.dev/docs/notion-photo-react#change-the-site-configuration
+
 module.exports = {
     global: {
-        author: 'Harry Yep', // The Photo Gallery author
         site: {
-            name: 'Notion Photo React Example', // The Photo Gallery title
-            description: 'Photo Gallery built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // The Photo Gallery description
-            url: 'https://npr.okis.dev/', // The Photo Gallery URL
-            banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`, // The Photo Gallery Open Graph image
-            language: [
-                // The supported language of the Blog (Not recommand to change, only support **简体中文** and **British England** so far)
+            name: 'Notion Photo React Example',
+            description: 'Photo Gallery built with Notion, React.JS, Next.JS, tailwindcss, TypeScript, notion-api-worker and more.',
+            url: 'https://npr.okis.dev/',
+            author: 'Harry Yep',
+            banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`,
+            nav: [
                 {
-                    name: 'British English', // The language name (Default is **British English**)
-                    code: 'en-GB', // The language code, this is related the URL you visited. For example, `blog.example.com/zh-CN` stand for **简体中文** of the blog.
+                    name: 'Home',
+                    url: '/',
+                    external: false,
+                    position: 'left',
                 },
                 {
-                    name: 'Simplified Chinese',
-                    code: 'zh-CN',
+                    name: 'GitHub',
+                    url: 'https://github.com/okisdev',
+                    external: true,
+                    position: 'right',
                 },
             ],
+            language: [
+                { name: '🇬🇧 English', code: 'en-GB' },
+                { name: '🇨🇳 简体中文', code: 'zh-CN' },
+                { name: '🇭🇰 繁體中文', code: 'zh-HK' },
+            ],
+            font: '',
         },
         content: {
             header: {
-                description: `...`, // The description of the Photo Gallery, which will be shown on the header of the page. JSX supported.
+                description: `A Photo Gallery built with <a href='https://notion.so/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion</a>, <a href='https://nextjs.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Next.js</a>, <a href='https://tailwindcss.com/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>tailwindcss</a>, <a href='https://www.typescriptlang.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>TypeScript</a>, <a href='https://github.com/splitbee/notion-api-worker' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion-Api-Worker</a> and more. (Find more on <a href='https://github.com/Harry-Yep/Notion-Photo-React' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>GitHub</a>)`,
             },
             license: {
-                name: 'CC BY-NC-SA 4.0', // The License Name
-                url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/', // The License agreement URL
+                name: 'CC BY-NC-SA 4.0',
+                url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+            },
+            footer: {
+                copyright: 'Copyright © 2023 Harry Yep. All rights reserved.',
             },
         },
         analytics: {
-            google: '', // The Google Analytics UA Code
-            splitbee: 'O1KKIQNSGP18', // The Splitbee Analytics Code
+            umami: {
+                url: 'https://umami.harisfox.com/script.js',
+                website_id: '4c785146-016d-48b8-81fe-85172c82b37d',
+            },
         },
     },
 };
