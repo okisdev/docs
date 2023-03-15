@@ -128,6 +128,14 @@ const config = {
                                 label: 'Notion Photo React',
                                 to: '/notion-photo-react/',
                             },
+                            {
+                                label: 'TfL Tube',
+                                to: '/tfl-tube/',
+                            },
+                            {
+                                label: 'Chat Chat',
+                                to: '/chat/',
+                            },
                         ],
                     },
 

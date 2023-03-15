@@ -42,6 +42,14 @@ const FeatureList: FeatureItem[] = [
         github: 'https://github.com/okisdev/TfL-Tube',
         demo: 'https://tube.okis.dev/',
     },
+    {
+        title: 'Chat Chat',
+        pic: 'https://cdn.harrly.com/project/GitHub/Chat-Chat/img/Chat-Chat.Banner.png',
+        description: <Translate>Chat Chat, a platform that allows you to chat with AI more easier.</Translate>,
+        doc: '/chat',
+        github: null,
+        demo: 'https://chat.okis.dev/',
+    },
 ];
 
 function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
@@ -59,9 +67,11 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
                     <Link href={doc} className={styles.links}>
                         <Translate id='home.feature.bar.docs'>Docs</Translate>
                     </Link>
-                    <Link href={github} className={styles.links}>
-                        <Translate id='home.feature.bar.github'>GitHub</Translate>
-                    </Link>
+                    {github && (
+                        <Link href={github} className={styles.links}>
+                            <Translate id='home.feature.bar.github'>GitHub</Translate>
+                        </Link>
+                    )}
                     <Link href={demo} className={styles.links}>
                         <Translate id='home.feature.bar.demo'>Demo</Translate>
                     </Link>
