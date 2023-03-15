@@ -8,11 +8,11 @@ title: Chat Chat Documentation
 
 ## What is this
 
-This is a documentation of the Chat Chat, a AI chatting platform. It is a work in progress, and is not complete. If you have any questions, please feel free to ask via [email](mailto:hi@okis.dev) or [Twitter](https://twitter.com/okisdev).
+This is documentation of Chat Chat, an AI interaction platform. It is a work in progress, and is not complete. If you have any questions, please feel free to ask via [email](mailto:hi@okis.dev) or [Twitter](https://twitter.com/okisdev).
 
 ## TL;DR
 
-"Chat Chat" is a user interface for ChatGPT, utilizing GPT to generate responses making chat with AI more easier.
+**Chat Chat** is NOT a shell application, free to use with OpenAI API required. It wants to enhance the user experience in several ways, rebuilding the user experience with AI and utilizing GPT to generate responses making interaction with AI more easier. In the future, more and more features will be added that cooperate with AI.
 
 ## How to use?
 
