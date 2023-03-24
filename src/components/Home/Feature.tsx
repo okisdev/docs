@@ -1,12 +1,8 @@
 import React from 'react';
 
-import clsx from 'clsx';
-
 import Link from '@docusaurus/Link';
 
 import Translate, { translate } from '@docusaurus/Translate';
-
-import styles from './Feature.styles.module.css';
 
 type FeatureItem = {
     title: string;
@@ -15,6 +11,7 @@ type FeatureItem = {
     doc: string;
     github: string;
     demo: string;
+    date: string;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -25,6 +22,7 @@ const FeatureList: FeatureItem[] = [
         doc: '/notion-blog-react',
         github: 'https://github.com/okisdev/Notion-Blog-React',
         demo: 'https://nbr.okis.dev/',
+        date: '2021-08',
     },
     {
         title: 'Notion Photo React',
@@ -33,49 +31,61 @@ const FeatureList: FeatureItem[] = [
         doc: '/notion-photo-react',
         github: 'https://github.com/okisdev/Notion-Photo-React',
         demo: 'https://npr.okis.dev/',
+        date: '2022-02',
     },
     {
         title: 'TfL Tube',
         pic: 'https://cdn.harrly.com/project/GitHub/TfL-Tube/img/TfL-Tube.Banner.png',
-        description: <Translate>TfL Tube, a platform gathers and visualises London transportation information, including Underground, Overground, Elizabeth Line and more.</Translate>,
+        description: <Translate>A platform gathers and visualises London transportation information, including Underground, Overground, Elizabeth Line and more.</Translate>,
         doc: '/tfl-tube',
         github: 'https://github.com/okisdev/TfL-Tube',
         demo: 'https://tube.okis.dev/',
+        date: '2023-02',
     },
     {
         title: 'Chat Chat',
         pic: 'https://cdn.harrly.com/project/GitHub/Chat-Chat/img/Chat-Chat.Banner.png',
-        description: <Translate>Chat Chat, a platform that allows you to chat with AI more easier.</Translate>,
+        description: <Translate>Unlock next-level conversations with AI.</Translate>,
         doc: '/chat',
         github: null,
         demo: 'https://chat.okis.dev/',
+        date: '2023-03',
     },
 ];
 
 function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
     return (
-        <div className={clsx('col col--4')}>
-            <div className={styles.box}>
-                <div>
-                    <img src={pic} alt={title} />
-                </div>
-                <div className='text--center padding-horiz--md'>
-                    <h3>{title}</h3>
-                    <p>{description}</p>
-                </div>
-                <div className={styles.bar}>
-                    <Link href={doc} className={styles.links}>
-                        <Translate id='home.feature.bar.docs'>Docs</Translate>
+        <div className='grid break-inside-avoid rounded-xl bg-gray-100 p-3 text-center dark:bg-stone-500'>
+            <div className='p-3'>
+                <img src={pic} alt={title} />
+            </div>
+            <div className='mx-auto flex w-10/12 flex-col items-center justify-center'>
+                <h3>{title}</h3>
+                <p>{description}</p>
+            </div>
+            <div className='mx-auto my-5 flex w-8/12 items-center justify-between'>
+                <Link
+                    href={doc}
+                    className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                >
+                    <Translate id='home.feature.bar.docs'>Docs</Translate>
+                </Link>
+                {github && (
+                    <Link
+                        href={github}
+                        target='_blank'
+                        className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                    >
+                        <Translate id='home.feature.bar.github'>GitHub</Translate>
                     </Link>
-                    {github && (
-                        <Link href={github} className={styles.links}>
-                            <Translate id='home.feature.bar.github'>GitHub</Translate>
-                        </Link>
-                    )}
-                    <Link href={demo} className={styles.links}>
-                        <Translate id='home.feature.bar.demo'>Demo</Translate>
-                    </Link>
-                </div>
+                )}
+                <Link
+                    href={demo}
+                    target='_blank'
+                    className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                >
+                    <Translate id='home.feature.bar.demo'>Demo</Translate>
+                </Link>
             </div>
         </div>
     );
@@ -83,13 +93,11 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
 
 export default function HomepageFeatures(): JSX.Element {
     return (
-        <section className={styles.features}>
-            <div className='container'>
-                <div className='row'>
-                    {FeatureList.map((props, idx) => (
-                        <Feature key={idx} {...props} />
-                    ))}
-                </div>
+        <section className=''>
+            <div className='container mx-auto my-10 w-11/12 columns-1 space-y-2 md:w-10/12 md:columns-3 md:space-y-3'>
+                {FeatureList.sort((a, b) => (a.date > b.date ? -1 : 1)).map((props, idx) => (
+                    <Feature key={idx} {...props} />
+                ))}
             </div>
         </section>
     );

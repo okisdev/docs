@@ -10,7 +10,7 @@ const katex = require('rehype-katex');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "okey's Dev Docs",
-    tagline: "okey's Dev Docs",
+    tagline: '',
     url: 'https://docs.okis.dev',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -91,6 +91,16 @@ const config = {
                 docsRouteBasePath: '/',
             },
         ],
+        async function myPlugin(context, options) {
+            return {
+                name: 'docusaurus-tailwindcss',
+                configurePostCss(postcssOptions) {
+                    postcssOptions.plugins.push(require('tailwindcss'));
+                    postcssOptions.plugins.push(require('autoprefixer'));
+                    return postcssOptions;
+                },
+            };
+        },
     ],
 
     themeConfig:
