@@ -4,34 +4,51 @@ slug: /chat
 title: Chat Chat Documentation
 ---
 
-# Chat Chat Documentation (Work in Progress)
+# Chat Chat Documentation
 
 ## What is this
 
-This is documentation of Chat Chat, an AI interaction platform. It is a work in progress, and is not complete. If you have any questions, please feel free to ask via [email](mailto:hi@okis.dev) or [Twitter](https://twitter.com/okisdev).
+This document contains information about Chat Chat, a platform for AI interactions aimed at facilitating conversations at a higher level using artificial intelligence. We provide quality service to our users and hope that they will provide quality feedback so that we can improve better.
 
 ## TL;DR
 
-**Chat Chat** is NOT a shell application, free to use with OpenAI API required. It wants to enhance the user experience in several ways, rebuilding the user experience with AI and utilizing GPT to generate responses making interaction with AI more easier. In the future, more and more features will be added that cooperate with AI.
+Chat Chat is not a shell application, and it is FREE to use but requires an OpenAI API. Its goal is to improve user experience through various means by using AI to reconstruct user experience and generate responses using GPT, making interaction with AI easier. The platform plans to add more features in the future to collaborate with AI.
+
+## Features
+
+-   [x] Chat with AI
+-   [x] Markdown support
+-   [x] PWA support
+-   [x] PDF reader
+-   [x] Act as a character
+-   [x] Help you coding
+-   [x] Self config (Advanced)
+-   [ ] More are coming ...
 
 ## How to use?
 
-### Desktop
+### Prerequisites
 
--   Just visit [chat.okis.dev](https://chat.okis.dev) and you will be use directly.
+To use Chat Chat, one needs to have an OpenAI API Key, which can be obtained by registering on [OpenAI](https://openai.com/), creating an API key, and entering the key in the settings on the Chat Chat website at [chat.okis.dev](https://chat.okis.dev).
 
-### Mobile
+### Platforms
 
-We use [PWA](https://en.wikipedia.org/wiki/Progressive_web_application) to make the website work on mobile. You can add the website to your home screen and use it as a native app.
+#### Desktop
 
-Please see [this article](https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html) for more information.
+The platform can be accessed on desktop devices by visiting [chat.okis.dev](https://chat.okis.dev).
+
+#### Mobile
+
+The platform can be accessed on mobile devices by visiting chat.okis.dev. It also supports PWA installation, which can be done by clicking the three dots on the browser or saving a bookmark to the home screen. If unsure about how to install PWA, please refer to [this article](https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html) for more information.
 
 ## Privacy Policy
 
-see [Privacy Policy](https://www.harrly.com/privacy-policy)
+We understand that user privacy is a fundamental human right, and we will do our best to protect it. Please refer to our [Privacy Policy](https://www.harrly.com/privacy-policy) for detailed privacy policy rules and more information about all of our products.
 
 ## Cookie Policy
 
-see [Cookie Policy](https://www.harrly.com/cookies)
+Cookies are an essential component of our website, and we use them to provide a better user experience. Please refer to our [Cookie Policy](https://www.harrly.com/cookies) for more information.
 
-> More things happening...
+## Feedback
+
+If you have any questions, please feel free to contact us at [Twitter](https://twitter.com/okisdev) or [email](mailto:hi@okis.dev).
