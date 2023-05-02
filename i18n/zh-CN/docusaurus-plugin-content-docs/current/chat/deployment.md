@@ -12,23 +12,23 @@ title: Chat Chat 部署
 
 如果你需要仪表盘的功能，你还需要：
 
--   一个 Postgresql 数据库
+-   Postgresql 数据库（Vercel Storage, Supabase 或者其他平台的 postgresql 都可以）
 
 ## 环境变量
 
-| 变量名称              | 描述                     | 默认                            | 是否强制需要 | 提示                                                                                                |
-| --------------------- | ------------------------ | ------------------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
-| `BASE_URL`            | 您的网站 URL （带前缀）  | 本地默认`http://localhost:3000` | **Yes**      |                                                                                                     |
-| `OPENAI_API_KEY`      | OpenAI API 密钥          |                                 | No           |                                                                                                     |
-| `OPENAI_API_ENDPOINT` | OpenAI API 接入点        |                                 | No           |                                                                                                     |
-| `DATABASE_URL`        | Postgresql 数据库地址    |                                 | **Yes**      | 以 `postgresql://` 开头 （如果不需要，请填写 `postgresql://user:password@example.com:port/dbname`） |
-| `NEXTAUTH_URL`        | 您的网站 URL（不带前缀） |                                 | **Yes**      |                                                                                                     |
-| `NEXTAUTH_SECRET`     | NextAuth Secret          |                                 | **Yes**      | 随机哈希数值（16 位最佳）                                                                           |
-| `EMAIL_HOST`          | SMTP Host                |                                 | No           |                                                                                                     |
-| `EMAIL_PORT`          | SMTP Port                |                                 | No           |                                                                                                     |
-| `EMAIL_USERNAME`      | SMTP username            |                                 | No           |                                                                                                     |
-| `EMAIL_PASSWORD`      | SMTP password            |                                 | No           |                                                                                                     |
-| `EMAIL_FORM`          | SMTP 发送地址            |                                 | No           |                                                                                                     |
+| 变量名称              | 描述                  | 默认                            | 是否强制需要 | 提示                                                                                                |
+| --------------------- | --------------------- | ------------------------------- | ------------ | --------------------------------------------------------------------------------------------------- |
+| `BASE_URL`            | 您的网站 URL          | 本地默认`http://localhost:3000` | **Yes**      | （带前缀）                                                                                          |
+| `DATABASE_URL`        | Postgresql 数据库地址 |                                 | **Yes**      | 以 `postgresql://` 开头 （如果不需要，请填写 `postgresql://user:password@example.com:port/dbname`） |
+| `NEXTAUTH_URL`        | 您的网站 URL          |                                 | **Yes**      | （不带前缀）                                                                                        |
+| `NEXTAUTH_SECRET`     | NextAuth Secret       |                                 | **Yes**      | 随机哈希数值（16 位最佳）                                                                           |
+| `OPENAI_API_KEY`      | OpenAI API 密钥       |                                 | No           |                                                                                                     |
+| `OPENAI_API_ENDPOINT` | OpenAI API 接入点     |                                 | No           |                                                                                                     |
+| `EMAIL_HOST`          | SMTP Host             |                                 | No           |                                                                                                     |
+| `EMAIL_PORT`          | SMTP Port             |                                 | No           |                                                                                                     |
+| `EMAIL_USERNAME`      | SMTP username         |                                 | No           |                                                                                                     |
+| `EMAIL_PASSWORD`      | SMTP password         |                                 | No           |                                                                                                     |
+| `EMAIL_FORM`          | SMTP 发送地址         |                                 | No           |                                                                                                     |
 
 ## 部署
 
@@ -63,5 +63,7 @@ title: Chat Chat 部署
 
 1.  Fork 本仓库
 2.  在 Vercel 上创建一个新项目
-3.  在项目设置中添加环境变量
+    ![](./assets/Vercel-1.png)
+3.  在项目设置中添加环境变量（以下是强制要求的）
+    ![](./assets/Vercel-2.png)
 4.  部署
