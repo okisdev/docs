@@ -8,38 +8,19 @@ title: Chat Chat Documentation
 
 ## What is this
 
-This document contains information about Chat Chat, a platform for AI interactions aimed at facilitating conversations at a higher level using artificial intelligence. We provide quality service to our users and hope that they will provide quality feedback so that we can improve better.
-
-## TL;DR
-
-Chat Chat is not a shell application, and it is FREE to use but requires an OpenAI API. Its goal is to improve user experience through various means by using AI to reconstruct user experience and generate responses using GPT, making interaction with AI easier. The platform plans to add more features in the future to collaborate with AI.
+This document contains information about Chat Chat, a platform for AI interactions aimed at facilitating conversations at a higher level using artificial intelligence.
 
 ## Features
 
--   [x] Chat with AI
--   [x] Markdown support
--   [x] PWA support
--   [x] PDF reader
--   [x] Act as a character
--   [x] Help you coding
--   [x] Self config (Advanced)
--   [ ] More are coming ...
+Please refer to [this page](./features.md) for a list of features.
 
-## How to use?
+## Deployment
 
-### Prerequisites
+Please refer to [this page](./deployment.md) for deployment instructions.
 
-To use Chat Chat, one needs to have an OpenAI API Key, which can be obtained by registering on [OpenAI](https://openai.com/), creating an API key, and entering the key in the settings on the Chat Chat website at [chat.okis.dev](https://chat.okis.dev).
+## FAQ
 
-### Platforms
-
-#### Desktop
-
-The platform can be accessed on desktop devices by visiting [chat.okis.dev](https://chat.okis.dev).
-
-#### Mobile
-
-The platform can be accessed on mobile devices by visiting chat.okis.dev. It also supports PWA installation, which can be done by clicking the three dots on the browser or saving a bookmark to the home screen. If unsure about how to install PWA, please refer to [this article](https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html) for more information.
+Please refer to [this page](https://github.com/okisdev/ChatChat/issues/3) for frequently asked questions.
 
 ## Privacy Policy
 

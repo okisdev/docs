@@ -47,7 +47,7 @@ const FeatureList: FeatureItem[] = [
         pic: 'https://cdn.harrly.com/project/GitHub/Chat-Chat/img/Chat-Chat.Banner.png',
         description: <Translate>Unlock next-level conversations with AI.</Translate>,
         doc: '/chat',
-        github: null,
+        github: 'https://github.com/okisdev/ChatChat',
         demo: 'https://chat.okis.dev/',
         date: '2023-03',
     },
@@ -66,7 +66,7 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
             <div className='mx-auto my-5 flex w-8/12 items-center justify-between'>
                 <Link
                     href={doc}
-                    className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                    className='mb-2 mr-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
                 >
                     <Translate id='home.feature.bar.docs'>Docs</Translate>
                 </Link>
@@ -74,7 +74,7 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
                     <Link
                         href={github}
                         target='_blank'
-                        className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                        className='mb-2 mr-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
                     >
                         <Translate id='home.feature.bar.github'>GitHub</Translate>
                     </Link>
@@ -82,7 +82,7 @@ function Feature({ title, pic, description, doc, github, demo }: FeatureItem) {
                 <Link
                     href={demo}
                     target='_blank'
-                    className='mr-2 mb-2 rounded-lg border border-gray-200 bg-white py-2.5 px-5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
+                    className='mb-2 mr-2 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 transition duration-500 ease-in-out hover:bg-sky-300 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:border-gray-600 dark:bg-slate-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700'
                 >
                     <Translate id='home.feature.bar.demo'>Demo</Translate>
                 </Link>
