@@ -6,6 +6,15 @@ title: Chat Chat Deployment
 
 # Chat Chat Deployment
 
+:::info
+If you need the database function and allow user registration, please make sure
+
+1. Your database is powered by Postgresql.
+2. Your database do have the tables to store user information, please run `npx prisma db pull` to reflect the database structure.
+3. Your database is accessible from the Internet.
+
+:::
+
 ## Prerequisite
 
 -   API keys from OpenAI, Azure, Claude, Cohere, Hugging Face, etc., any one will do
@@ -59,7 +68,19 @@ If you need the functionality of a dashboard, you will also need:
     yarn dev
     ```
 
+### Deploy to Zeabur
+
+Visit [Zeabur](https://zeabur.com) to deploy
+
+### Deploy to Railway
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
+
 ### Deploy to Vercel
+
+[![Deployed in Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
+
+OR
 
 1. Fork this repo
 2. Create a new project on Vercel
@@ -67,3 +88,24 @@ If you need the functionality of a dashboard, you will also need:
 3. Add environment variables to the project settings (the following are forced required)
    ![](./assets/Vercel-2.png)
 4. Deploy
+
+### Deploy with Docker
+
+1. Clone the Repo
+
+    ```bash
+    git clone https://github.com/okisdev/ChatChat.git
+    ```
+
+2. Run the following command to build the image
+
+    ```bash
+    docker build -t chatchat .
+    docker run -p 3000:3000 chatchat -e BASE_URL="" -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e OPENAI_API_KEY="" -e OPENAI_API_ENDPOINT="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM=""
+    ```
+
+OR use the image from Docker Hub
+
+```bash
+docker run -p 3000:3000 ghcr.io/okisdev/chatchat:latest -e BASE_URL="" -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e OPENAI_API_KEY="" -e OPENAI_API_ENDPOINT="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM=""
+```
