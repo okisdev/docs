@@ -10,7 +10,7 @@ title: Chat Chat Deployment
 If you need the database function and allow user registration, please make sure
 
 1. Your database is powered by Postgresql.
-2. Your database do have the tables to store user information, please run `npx prisma db pull` to reflect the database structure.
+2. Your database do have the tables to store user information, please run `npx prisma db push` to reflect the database structure at the first time set up.
 3. Your database is accessible from the Internet.
 
 :::
