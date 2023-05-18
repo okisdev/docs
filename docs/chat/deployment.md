@@ -25,18 +25,16 @@ If you need the functionality of a dashboard, you will also need:
 
 ## Environment Variables
 
-| variable name         | description                 | default | mandatory | prompt                                                                                                            |
-| --------------------- | --------------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------- |
-| `DATABASE_URL`        | Postgresql database address |         | **Yes**   | Start with `postgresql://` (if not required, please fill in `postgresql://user:password@example.com:port/dbname`) |
-| `NEXTAUTH_URL`        | Your website URL            |         | **Yes**   | (with prefix)                                                                                                     |
-| `NEXTAUTH_SECRET`     | NextAuth Secret             |         | **Yes**   | Random hash (16 bits is best)                                                                                     |
-| `OPENAI_API_KEY`      | OpenAI API key              |         | No        |                                                                                                                   |
-| `OPENAI_API_ENDPOINT` | OpenAI API access point     |         | No        |                                                                                                                   |
-| `EMAIL_HOST`          | SMTP Host                   |         | No        |                                                                                                                   |
-| `EMAIL_PORT`          | SMTP Port                   |         | No        |                                                                                                                   |
-| `EMAIL_USERNAME`      | SMTP username               |         | No        |                                                                                                                   |
-| `EMAIL_PASSWORD`      | SMTP password               |         | No        |                                                                                                                   |
-| `EMAIL_FORM`          | SMTP sending address        |         | No        |                                                                                                                   |
+| variable name     | description                 | default | mandatory | prompt                                                                                                            |
+| ----------------- | --------------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------- |
+| `DATABASE_URL`    | Postgresql database address |         | **Yes**   | Start with `postgresql://` (if not required, please fill in `postgresql://user:password@example.com:port/dbname`) |
+| `NEXTAUTH_URL`    | Your website URL            |         | **Yes**   | (with prefix)                                                                                                     |
+| `NEXTAUTH_SECRET` | NextAuth Secret             |         | **Yes**   | Random hash (16 bits is best)                                                                                     |
+| `EMAIL_HOST`      | SMTP Host                   |         | No        |                                                                                                                   |
+| `EMAIL_PORT`      | SMTP Port                   |         | No        |                                                                                                                   |
+| `EMAIL_USERNAME`  | SMTP username               |         | No        |                                                                                                                   |
+| `EMAIL_PASSWORD`  | SMTP password               |         | No        |                                                                                                                   |
+| `EMAIL_FORM`      | SMTP sending address        |         | No        |                                                                                                                   |
 
 ## Deployment
 
@@ -100,11 +98,11 @@ OR
 
     ```bash
     docker build -t chatchat .
-    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e OPENAI_API_KEY="" -e OPENAI_API_ENDPOINT="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM=""
+    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM=""
     ```
 
 OR use the image from Docker Hub
 
 ```bash
-docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e OPENAI_API_KEY="" -e OPENAI_API_ENDPOINT="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM="" ghcr.io/okisdev/chatchat:latest
+docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM="" ghcr.io/okisdev/chatchat:latest
 ```
