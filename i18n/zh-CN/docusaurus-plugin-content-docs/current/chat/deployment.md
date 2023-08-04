@@ -34,9 +34,10 @@ title: Chat Chat 部署
 | `NEXTAUTH_SECRET` | NextAuth Secret       |      | **Yes**      | 随机哈希数值（16 位最佳）                                                                           |
 | `EMAIL_HOST`      | SMTP Host             |      | No           |                                                                                                     |
 | `EMAIL_PORT`      | SMTP Port             |      | No           |                                                                                                     |
+| `EMAIL_USE_SSL`   | SMTP SSL              | true | No           |                                                                                                     |
 | `EMAIL_USERNAME`  | SMTP username         |      | No           |                                                                                                     |
 | `EMAIL_PASSWORD`  | SMTP password         |      | No           |                                                                                                     |
-| `EMAIL_FORM`      | SMTP 发送地址         |      | No           |                                                                                                     |
+| `EMAIL_FROM`      | SMTP 发送地址         |      | No           |                                                                                                     |
 
 ## 部署
 
@@ -100,11 +101,11 @@ title: Chat Chat 部署
 
     ```bash
     docker build -t chatchat .
-    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM=""
+    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM=""
     ```
 
 或者使用 Docker Hub 上的镜像
 
 ```bash
-docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FORM="" ghcr.io/okisdev/chatchat:latest
+docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM="" ghcr.io/okisdev/chatchat:latest
 ```
