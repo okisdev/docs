@@ -33,8 +33,7 @@ title: Chat Chat 部署
 | `NEXTAUTH_URL`    | 您的网站 URL          |      | **Yes**      | （带前缀）                                                                                          |
 | `NEXTAUTH_SECRET` | NextAuth Secret       |      | **Yes**      | 随机哈希数值（16 位最佳）                                                                           |
 | `EMAIL_HOST`      | SMTP Host             |      | No           |                                                                                                     |
-| `EMAIL_PORT`      | SMTP Port             |      | No           |                                                                                                     |
-| `EMAIL_USE_SSL`   | SMTP SSL              | true | No           |                                                                                                     |
+| `EMAIL_PORT`      | SMTP Port             | 587  | No           |                                                                                                     |
 | `EMAIL_USERNAME`  | SMTP username         |      | No           |                                                                                                     |
 | `EMAIL_PASSWORD`  | SMTP password         |      | No           |                                                                                                     |
 | `EMAIL_FROM`      | SMTP 发送地址         |      | No           |                                                                                                     |
