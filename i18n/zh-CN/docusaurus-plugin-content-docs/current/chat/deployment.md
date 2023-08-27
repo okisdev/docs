@@ -52,7 +52,8 @@ title: Chat Chat 部署
 
     ```bash
     cd ChatChat
-    yarn
+    npm install -g pnpm
+    pnpm install
     ```
 
 3. 创建 `.env.local` 文件并填写环境变量
@@ -64,7 +65,7 @@ title: Chat Chat 部署
 4. 运行
 
     ```bash
-    yarn dev
+    pnpm dev
     ```
 
 ### 部署到 Zeabur

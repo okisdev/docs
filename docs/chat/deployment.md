@@ -50,7 +50,8 @@ If you need the functionality of a dashboard, you will also need:
 
     ```bash
     cd ChatChat
-    yarn
+    npm install -g pnpm
+    pnpm install
     ```
 
 3. Create the `.env.local` file and fill in the environment variables
@@ -62,7 +63,7 @@ If you need the functionality of a dashboard, you will also need:
 4. Run
 
     ```bash
-    yarn dev
+    pnpm dev
     ```
 
 ### Deploy to Zeabur
