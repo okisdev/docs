@@ -107,7 +107,7 @@ Alternatively, see [here](https://github.com/splitbee/notion-api-worker) for how
 This will be one of the Environment Variable of your site, called `NOTION_TABLE_SLUG`.
 :::
 
-You should create a notion table with below properties. (You can duplicate a template from [here](https://harrly.notion.site/2f01c9cec94d4925b2e9aec68b0e850b).)
+You should create a notion table with below properties. (You can duplicate a template from [here](https://okisdev.notion.site/2f01c9cec94d4925b2e9aec68b0e850b).)
 
 <details>
   <summary>See details about the each property</summary>

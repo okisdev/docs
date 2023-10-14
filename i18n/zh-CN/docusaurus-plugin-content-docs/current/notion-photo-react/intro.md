@@ -117,7 +117,7 @@ module.exports = {
 这将是您网站的环境变量之一，称为 `NOTION_TABLE_SLUG`。
 :::
 
-您应该创建一个具有以下属性的 Notion 数据库。（您可以从 [此处](https://harrly.notion.site/d04d7d2efc9a4e79a3c98d7d4c9e8fc9) 复制模板。）
+您应该创建一个具有以下属性的 Notion 数据库。（您可以从 [此处](https://okisdev.notion.site/d04d7d2efc9a4e79a3c98d7d4c9e8fc9) 复制模板。）
 
 <details>
   <summary>查看每个变量的详细信息</summary>
