@@ -1,9 +1,10 @@
 {
-  "github_link": {
-    "title": "GitHub",
-    "href": "https://github.com/okisdev/docs",
-    "newWindow": true
-  },
+  "notion-blog-react": "Notion Blog React",
+  "notion-photo-react": "Notion Photo React",
+  "chat": "Chat Chat",
+  "rail": "Rail",
+  "api": "API",
+  "tfl-tube": "TFL Tube",
   "index": {
     "title": "Home",
     "type": "page"
@@ -14,19 +15,19 @@
     "items": {
       "notion-blog-react": {
         "title": "Notion-Blog-React",
-        "href": "/docs/notion-blog-react"
+        "href": "/notion-blog-react"
       },
       "notion-photo-react": {
         "title": "Notion-Photo-React",
-        "href": "/docs/notion-photo-react"
+        "href": "/notion-photo-react"
       },
       "tfl-tube": {
         "title": "TFL Tube",
-        "href": "/docs/tfl-tube"
+        "href": "/tfl-tube"
       },
       "chat-chat": {
         "title": "Chat Chat",
-        "href": "/docs/chat"
+        "href": "/chat"
       }
     }
   },

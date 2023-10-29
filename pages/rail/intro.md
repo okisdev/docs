@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /rail
-title: Rail Documentation
----
-
 # Rail Documentation (Work in Progress)
 
 ## What is this
