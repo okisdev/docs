@@ -1,0 +1,39 @@
+{
+  "github_link": {
+    "title": "GitHub",
+    "href": "https://github.com/okisdev/docs",
+    "newWindow": true
+  },
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+  "docs": {
+    "title": "Docs",
+    "type": "menu",
+    "items": {
+      "notion-blog-react": {
+        "title": "Notion-Blog-React",
+        "href": "/docs/notion-blog-react"
+      },
+      "notion-photo-react": {
+        "title": "Notion-Photo-React",
+        "href": "/docs/notion-photo-react"
+      },
+      "tfl-tube": {
+        "title": "TFL Tube",
+        "href": "/docs/tfl-tube"
+      },
+      "chat-chat": {
+        "title": "Chat Chat",
+        "href": "/docs/chat"
+      }
+    }
+  },
+  "about": {
+    "title": "About",
+    "type": "page",
+    "href": "https://harryyep.com",
+    "newWindow": true
+  }
+}
