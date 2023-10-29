@@ -6,6 +6,10 @@ const config: DocsThemeConfig = {
     project: {
         link: 'https://github.com/okisdev/docs',
     },
+    i18n: [
+        { locale: 'en-GB', text: 'English' },
+        { locale: 'zh-CN', text: '简体中文' },
+    ],
 };
 
 export default config;

@@ -15,19 +15,19 @@
     "items": {
       "notion-blog-react": {
         "title": "Notion-Blog-React",
-        "href": "/notion-blog-react"
+        "href": "/notion-blog-react/intro"
       },
       "notion-photo-react": {
         "title": "Notion-Photo-React",
-        "href": "/notion-photo-react"
+        "href": "/notion-photo-react/intro"
       },
       "tfl-tube": {
         "title": "TFL Tube",
-        "href": "/tfl-tube"
+        "href": "/tfl-tube/intro"
       },
       "chat-chat": {
         "title": "Chat Chat",
-        "href": "/chat"
+        "href": "/chat/intro"
       }
     }
   },
