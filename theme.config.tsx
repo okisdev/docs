@@ -12,6 +12,10 @@ const config: DocsThemeConfig = {
     footer: {
         text: `Copyright © ${currentYear} Harry Yep. All rights reserved.`,
     },
+    i18n: [
+        { locale: 'en-GB', text: 'English' },
+        { locale: 'zh-CN', text: '中文' },
+    ]
 };
 
 export default config;
