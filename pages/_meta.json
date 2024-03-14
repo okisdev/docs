@@ -1,0 +1,45 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "type": "menu",
+    "items": {
+      "API": {
+        "title": "API",
+        "href": "/apis"
+      },
+      "ChatChat": {
+        "title": "Chat Chat",
+        "href": "/chat"
+      },
+      "Notion-Blog-React": {
+        "title": "Notion Blog React",
+        "href": "/notion-blog-react"
+      },
+      "Notion-Photo-React": {
+        "title": "Notion Photo React",
+        "href": "/notion-photo-react"
+      },
+      "Rail": {
+        "title": "Rail",
+        "href": "/rail"
+      },
+      "TfL Tube": {
+        "title": "TfL Tube",
+        "href": "/tfl-tube"
+      }
+    }
+  },
+  "about": {
+    "title": "About",
+    "type": "page",
+    "href": "https://www.harrly.com",
+    "newWindow": true
+  }
+}
