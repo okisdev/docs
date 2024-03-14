@@ -27,4 +27,15 @@ export default {
         { locale: 'en-GB', text: 'English' },
         { locale: 'zh-CN', text: '简体中文' },
     ],
+    footer: {
+        text: (
+            <span>
+                MIT {new Date().getFullYear()} ©{' '}
+                <a href='https://www.harrly.com' target='_blank'>
+                    Harry Yep
+                </a>
+                . All rights reserved.
+            </span>
+        ),
+    },
 };
