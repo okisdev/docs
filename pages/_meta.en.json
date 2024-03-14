@@ -13,27 +13,27 @@
     "items": {
       "API": {
         "title": "API",
-        "href": "/apis"
+        "href": "/apis/index"
       },
       "ChatChat": {
         "title": "Chat Chat",
-        "href": "/chat"
+        "href": "/chat/index"
       },
       "Notion-Blog-React": {
         "title": "Notion Blog React",
-        "href": "/notion-blog-react"
+        "href": "/notion-blog-react/index"
       },
       "Notion-Photo-React": {
         "title": "Notion Photo React",
-        "href": "/notion-photo-react"
+        "href": "/notion-photo-react/index"
       },
       "Rail": {
         "title": "Rail",
-        "href": "/rail"
+        "href": "/rail/index"
       },
       "TfL Tube": {
         "title": "TfL Tube",
-        "href": "/tfl-tube"
+        "href": "/tfl-tube/index"
       }
     }
   },

@@ -1,0 +1,76 @@
+{
+  "index": {
+    "title": "okey's docs",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "type": "menu",
+    "items": {
+      "API": {
+        "title": "API",
+        "href": "/apis/index"
+      },
+      "ChatChat": {
+        "title": "Chat Chat",
+        "href": "/chat/index"
+      },
+      "Notion-Blog-React": {
+        "title": "Notion Blog React",
+        "href": "/notion-blog-react/index"
+      },
+      "Notion-Photo-React": {
+        "title": "Notion Photo React",
+        "href": "/notion-photo-react/index"
+      },
+      "Rail": {
+        "title": "Rail",
+        "href": "/rail/index"
+      },
+      "TfL Tube": {
+        "title": "TfL Tube",
+        "href": "/tfl-tube/index"
+      }
+    }
+  },
+  "apis": {
+    "type": "page",
+    "title": "API",
+    "display": "hidden"
+  },
+  "chat": {
+    "type": "page",
+    "title": "Chat Chat",
+    "display": "hidden"
+  },
+  "notion-blog-react": {
+    "type": "page",
+    "title": "Notion Blog React",
+    "display": "hidden"
+  },
+  "notion-photo-react": {
+    "type": "page",
+    "title": "Notion Photo React",
+    "display": "hidden"
+  },
+  "rail": {
+    "type": "page",
+    "title": "UK Rail",
+    "display": "hidden"
+  },
+  "tfl-tube": {
+    "type": "page",
+    "title": "TFL Tube",
+    "display": "hidden"
+  },
+  "about": {
+    "title": "About",
+    "type": "page",
+    "href": "https://www.harrly.com",
+    "newWindow": true
+  }
+}

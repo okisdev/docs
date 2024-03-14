@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /API
-title: API Documentation
----
-
 # API Documentation
 
 ## What is this
