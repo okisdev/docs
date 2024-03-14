@@ -55,7 +55,7 @@ const FeatureList: FeatureItem[] = [
 
 function FeatureCard({ title, pic, description, doc, github, demo }: FeatureItem) {
     return (
-        <div className='grid rounded-md break-inside-avoid border border-gray-700 overflow-hidden'>
+        <div className='grid rounded-md break-inside-avoid border border-zinc-900/30 dark:border-zinc-200/30 overflow-hidden transition duration-300 ease-in-out transform hover:border-zinc-200/70 hover:shadow-lg dark:hover:shadow-xl dark:hover:border-zinc-200/50 bg-zinc-50 dark:bg-zinc-900/50'>
             <img src={pic} alt={title} />
             <div className='flex flex-col p-3 space-y-3'>
                 <Link href={demo} target='_blank'>
@@ -66,7 +66,7 @@ function FeatureCard({ title, pic, description, doc, github, demo }: FeatureItem
                 </Link>
                 <p className='text-sm text-gray-500 dark:text-gray-400'>{description}</p>
             </div>
-            <div className='border-stone-700 border-b' />
+            <div className='border-zinc-900/30 dark:border-zinc-200/30 border-b' />
             <div className='px-3 my-5 flex justify-between'>
                 <Link href={doc}>
                     <div className='flex flex-row items-center justify-start space-x-1'>

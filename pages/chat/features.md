@@ -1,9 +1,3 @@
----
-sidebar_position: 2
-slug: /chat/features
-title: Chat Chat Features Overview
----
-
 # Chat Chat Features Overview
 
 -   [x] TTS

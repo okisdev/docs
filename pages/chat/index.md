@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /chat
-title: Chat Chat Documentation
----
-
 # Chat Chat Documentation
 
 ## What is this

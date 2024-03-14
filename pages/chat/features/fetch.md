@@ -1,8 +1,3 @@
----
-sidebar_position: 2
-title: Fetch Content
----
-
 # Fetch Web Content
 
 ## How to use

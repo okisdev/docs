@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /notion-blog-react
-title: Notion Blog React Documentation
----
-
 # Notion Blog React Documentation
 
 ## What is this

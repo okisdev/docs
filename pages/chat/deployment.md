@@ -1,9 +1,3 @@
----
-sidebar_position: 2
-slug: /chat/deployment
-title: Chat Chat Deployment
----
-
 # Chat Chat Deployment
 
 :::info

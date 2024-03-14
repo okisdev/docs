@@ -1,8 +1,3 @@
----
-sidebar_position: 2
-title: GitHub Contribution API
----
-
 # GitHub Contribution API Reference
 
 ## What is this

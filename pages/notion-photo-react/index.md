@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /notion-photo-react
-title: Notion Photo React Documentation
----
-
 # Notion Photo React Documentation
 
 ## What is this
