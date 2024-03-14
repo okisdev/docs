@@ -12,6 +12,10 @@ export default {
             return {
                 titleTemplate: "%s – okisdev's docs",
             };
+        } else {
+            return {
+                title: "okisdev's docs",
+            };
         }
     },
     head: (
