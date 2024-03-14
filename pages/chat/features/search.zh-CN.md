@@ -28,8 +28,8 @@
 3. 开启聊天界面，勾选 `Plugins`
 4. 在输入框中输入 `/search`+ 空格 + 搜索内容，例如 `/search Who is the president of the United States?`
 
-![Search](../assets/search.png)
+![Search](/chat/assets/search.png)
 
 ## 演示
 
-[演示视频](../assets/search.mp4)
+[演示视频](/chat/assets/search.mp4)

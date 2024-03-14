@@ -7,4 +7,4 @@
 
 ## 演示
 
-[演示视频](../assets/fetch.mp4)
+[演示视频](/chat/assets/fetch.mp4)
