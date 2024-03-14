@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     {
         title: 'TfL Tube',
         pic: 'https://cdn.harrly.com/project/GitHub/TfL-Tube/img/TfL-Tube.Banner.png',
-        description: 'A platform gathers and visualises London transportation information, including Underground, Overground, Elizabeth Line and more.',
+        description: 'A platform gathers and visualises London transportation information.',
         doc: '/tfl-tube',
         github: 'https://github.com/okisdev/TfL-Tube',
         demo: 'https://tube.okis.dev/',
@@ -55,9 +55,9 @@ const FeatureList: FeatureItem[] = [
 
 function FeatureCard({ title, pic, description, doc, github, demo }: FeatureItem) {
     return (
-        <div className='grid rounded-md break-inside-avoid border border-zinc-900/30 dark:border-zinc-200/30 overflow-hidden transition duration-300 ease-in-out transform hover:border-zinc-200/70 hover:shadow-lg dark:hover:shadow-xl dark:hover:border-zinc-200/50 bg-zinc-50 dark:bg-zinc-900/50'>
+        <div className='grid transform break-inside-avoid overflow-hidden rounded-md border border-zinc-900/30 bg-zinc-50 transition duration-300 ease-in-out hover:border-zinc-200/70 hover:shadow-lg dark:border-zinc-200/30 dark:bg-zinc-900/50 dark:hover:border-zinc-200/50 dark:hover:shadow-xl'>
             <img src={pic} alt={title} />
-            <div className='flex flex-col p-3 space-y-3'>
+            <div className='flex flex-col space-y-2 p-3 md:space-y-3'>
                 <Link href={demo} target='_blank'>
                     <div className='flex flex-row items-center justify-start space-x-1'>
                         <p className='font-bold'>{title}</p>
@@ -66,8 +66,8 @@ function FeatureCard({ title, pic, description, doc, github, demo }: FeatureItem
                 </Link>
                 <p className='text-sm text-gray-500 dark:text-gray-400'>{description}</p>
             </div>
-            <div className='border-zinc-900/30 dark:border-zinc-200/30 border-b' />
-            <div className='px-3 my-5 flex justify-between'>
+            <div className='border-b border-zinc-900/30 dark:border-zinc-200/30' />
+            <div className='my-5 flex justify-between px-3'>
                 <Link href={doc}>
                     <div className='flex flex-row items-center justify-start space-x-1'>
                         <p>Read me</p>
