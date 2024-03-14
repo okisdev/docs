@@ -1,9 +1,10 @@
 {
   "index": {
-    "title": "Home",
+    "title": "okey's docs",
     "type": "page",
+    "display": "hidden",
     "theme": {
-      "sidebar": false
+      "layout": "raw"
     }
   },
   "Projects": {
