@@ -24,7 +24,7 @@ export default {
     ),
     darkMode: true,
     i18n: [
-        { locale: 'en', text: 'English' },
+        { locale: 'en-GB', text: 'English' },
         { locale: 'zh-CN', text: '简体中文' },
     ],
 };
