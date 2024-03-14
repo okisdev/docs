@@ -1,3 +1,4 @@
+import { FeatureLoadingSkeleton } from '@/components/loading-skeleton';
 import { ProjectType } from '@/types/project';
 import { getProjects } from '@/utils/project';
 import Link from 'next/link';
@@ -11,7 +12,7 @@ function FeatureCard(props: Readonly<ProjectType>) {
             <img src={props.image} alt={props.name} />
             <div className='flex flex-col space-y-2 p-3 md:space-y-3'>
                 <Link href={props.url} target='_blank'>
-                    <div className='flex flex-row items-center justify-start space-x-1'>
+                    <div className='hover-underline-animation inline-flex flex-row items-center justify-start space-x-1'>
                         <p className='font-bold'>{props.name}</p>
                         <FiArrowUpRight />
                     </div>
@@ -39,7 +40,7 @@ function FeatureCard(props: Readonly<ProjectType>) {
 }
 
 export default function Features(): JSX.Element {
-    const [p, setP] = useState<ProjectType[]>([]);
+    const [p, setP] = useState<ProjectType[] | null>(null);
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -53,11 +54,7 @@ export default function Features(): JSX.Element {
 
     return (
         <div className='container mx-auto my-10 w-11/12 columns-1 space-y-2 md:w-10/12 md:columns-3 md:space-y-3'>
-            {p
-                .filter((i) => i.doc)
-                .map((props) => (
-                    <FeatureCard key={props.id} {...props} />
-                ))}
+            {p ? p.filter((i) => i.doc).map((props) => <FeatureCard key={props.id} {...props} />) : <FeatureLoadingSkeleton />}
         </div>
     );
 }
