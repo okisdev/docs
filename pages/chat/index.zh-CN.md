@@ -1,29 +1,31 @@
-# Chat Chat Documentation
+# Chat Chat 文档
 
-## What is this
+## 这是什么
 
-This document contains information about Chat Chat, a platform for AI interactions aimed at facilitating conversations at a higher level using artificial intelligence.
+这是 Chat Chat 的文档，一个 AI 交互平台，目的是用人工智能开启下一层次的对话。
 
-## Features
+## 特点
 
-Please refer to [this page](./features.md) for a list of features.
+请参考[此页面](./features.md)了解功能列表。
 
-## Deployment
+## 部署
 
-Please refer to [this page](./deployment.md) for deployment instructions.
+请参考[此页面](./deployment.md)了解部署指南。
 
-## FAQ
+## 常见问题
 
-Please refer to [this page](https://github.com/okisdev/ChatChat/issues/3) for frequently asked questions.
+请参考[本页面](https://github.com/okisdev/ChatChat/issues/3)，了解常见问题。
 
-## Privacy Policy
+## 隐私政策
 
-We understand that user privacy is a fundamental human right, and we will do our best to protect it. Please refer to our [Privacy Policy](https://www.harrly.com/privacy-policy) for detailed privacy policy rules and more information about all of our products.
+我们了解用户的隐私是一个无比重要的基本人权，我们会尽最大努力保护用户的隐私。
 
-## Cookie Policy
+请看 [隐私政策](https://www.harrly.com/privacy-policy) 了解我们所有产品的隐私政策细则及更多信息。
 
-Cookies are an essential component of our website, and we use them to provide a better user experience. Please refer to our [Cookie Policy](https://www.harrly.com/cookies) for more information.
+## Cookie 政策
 
-## Feedback
+Cookie 是我们网站的必要组成部分，我们使用 Cookie 来提供更好的用户体验。请看 [Cookie 政策](https://www.harrly.com/cookies) 了解更多信息。
 
-If you have any questions, please feel free to contact us at [Twitter](https://twitter.com/okisdev) or [email](mailto:hi@okis.dev).
+## 反馈
+
+如果你有任何问题，欢迎在 [Twitter](https://twitter.com/okisdev) 或者 [email](mailto:hi@okis.dev) 联系我们。

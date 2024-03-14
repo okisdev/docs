@@ -1,11 +1,11 @@
-# Frequently Asked Questions
+# 常见问题
 
 ## Command not found: yarn
 
-This usually happens when deploying locally
+这通常发生在本地部署时
 
-This may be caused by `nodejs`, `npm` or `yarn` not installed locally.
+这可能是本地没有安装 `nodejs`, `npm` 或者 `yarn` 造成的
 
-### Solution
+### 解决方法
 
-Please see [Yarn Installation](https://classic.yarnpkg.com/lang/en/docs/install/)
+请查看 [Yarn Installation](https://classic.yarnpkg.com/lang/en/docs/install/)

@@ -1,62 +1,62 @@
-# Advanced configuration
+# 进阶配置
 
-We'll cover some optional modes for Notion Blog React.
+我们将在这里介绍一些 Notion Blog React 的可选配置。
 
-You will be able to change them in [`config/mode.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/mode.config.js) for semi-customization.
+您将能够在 [`config/mode.config.js`](https://github.com/okisdev/Notion-Blog-React/blob/main/config/mode.config.js) 中更改它们以进行半定制。
 
-## Global Configuration
+## 全局配置
 
-### Default Language
+### 默认语言
 
-path: `global.language.default`
+路径: `global.language.default`
 
--   `default: 'en-GB'` (default)
+-   `default: 'en-GB'` (默认)
 -   `default: 'zh-CN'`
 
-### Navbar
+### 导航栏
 
 -   atom:
 
-    path: `global.navbar.atom`
+    路径: `global.navbar.atom`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
     -   `shown: false`
 
 -   github:
 
-    path: `global.navbar.github`
+    路径: `global.navbar.github`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
     -   `shown: false`
 
 -   email:
 
-    path: `global.navbar.email`
+    路径: `global.navbar.email`
 
     -   `shown: true`
-    -   `shown: false` (default)
+    -   `shown: false` (默认)
 
 -   privacy_policy:
 
-    path: `global.navbar.privacy_policy`
+    路径: `global.navbar.privacy_policy`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
     -   `shown: false`
 
 -   language:
 
-    path: `global.navbar.language`
+    路径: `global.navbar.language`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
     -   `shown: false`
 
-### Footer
+### 页尾
 
 -   poweredByVercel:
 
-    path: `global.footer.poweredByVercel`
+    路径: `global.footer.poweredByVercel`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
 
         ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
 
@@ -66,9 +66,9 @@ path: `global.language.default`
 
 -   themeSwitcher:
 
-    path: `global.footer.themeSwitcher`
+    路径: `global.footer.themeSwitcher`
 
-    -   `shown: true` (default)
+    -   `shown: true` (默认)
 
         ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
 
@@ -76,13 +76,13 @@ path: `global.language.default`
 
         ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
 
-## Homepage
+## 主页
 
-### Header Avatar
+### 标题头像
 
-path: `home.header.avatar`
+路径: `home.header.avatar`
 
--   `shown: true` (default)
+-   `shown: true` (默认)
 
     ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
 
@@ -90,33 +90,33 @@ path: `home.header.avatar`
 
     ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
 
-### Blog Card Information Details Display Mode
+### Blog Card 信息详情显示模式
 
-path: `home.card.mode`
+路径: `home.card.mode`
 
 -   `mode: 0`
 
     ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
--   `mode: 1` (default)
+-   `mode: 1` (默认)
 
     ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
-### Blog Card Information Details Date - Locale
+### Blog Card 信息详情显示日期 - 区域设置
 
-path: `home.card.date.locale`
+路径: `home.card.date.locale`
 
-Default: `locale: 'en-GB'`
+默认: `locale: 'en-GB'`
 
-Please check [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString) for more information.
+更多内容请在[此处](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString)查看更多信息。
 
-## Posts page
+## Posts 页面
 
 ### Collection
 
-path: `posts.collection`
+路径: `posts.collection`
 
--   `shown: true` (default)
+-   `shown: true` (默认)
 
     ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
 
@@ -126,9 +126,9 @@ path: `posts.collection`
 
 ### Table of Content
 
-path: `posts.toc`
+路径: `posts.toc`
 
--   `shown: true` (default)
+-   `shown: true` (默认)
 
     ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
 

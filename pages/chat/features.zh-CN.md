@@ -1,14 +1,14 @@
-# Chat Chat Features Overview
+# Chat Chat 功能一览
 
 -   [x] TTS
--   [x] Chat with files
--   [x] Markdown formatting
--   [x] Support for System Prompt
--   [x] Shortcut menu (command + k)
--   [x] Wrapped API (no more proxies)
--   [x] Support for sharing conversations
--   [x] Chat history (local and cloud sync)
--   [x] Support for streaming messages (SSE)
--   [x] Plugin support (`/search`, `/fetch`)
--   [x] Support for message code syntax highlighting
--   [x] Support for OpenAI, Microsoft Azure, Claude, Cohere, Hugging Face
+-   [x] 与文件聊天
+-   [x] 支持分享对话
+-   [x] 支持流信息（SSE）
+-   [x] Markdown 格式化
+-   [x] 支持消息代码语法高亮
+-   [x] 支持 System Prompt
+-   [x] 快捷菜单（command + k）
+-   [x] 聊天记录（本地和云端同步）
+-   [x] 封装的 API（不再需要代理）
+-   [x] 支持插件功能（`/search`, `/fetch`）
+-   [x] 支持 OpenAI, Microsoft Azure, Claude, Cohere, Hugging Face
