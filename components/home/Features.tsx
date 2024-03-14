@@ -45,8 +45,6 @@ export default function Features(): JSX.Element {
         const fetchProjects = async () => {
             const projects = await getProjects();
 
-            console.log(projects);
-
             setP(projects);
         };
 
@@ -57,8 +55,8 @@ export default function Features(): JSX.Element {
         <div className='container mx-auto my-10 w-11/12 columns-1 space-y-2 md:w-10/12 md:columns-3 md:space-y-3'>
             {p
                 .filter((i) => i.doc)
-                .map((props, idx) => (
-                    <FeatureCard key={idx} {...props} />
+                .map((props) => (
+                    <FeatureCard key={props.id} {...props} />
                 ))}
         </div>
     );
