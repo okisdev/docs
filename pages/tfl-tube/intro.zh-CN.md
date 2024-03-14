@@ -1,9 +1,3 @@
----
-sidebar_position: 1
-slug: /tfl-tube
-title: TfL Tube Documentation
----
-
 # TfL Tube Documentation (Work in Progress)
 
 ## What is this
