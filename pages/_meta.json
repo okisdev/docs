@@ -37,6 +37,36 @@
       }
     }
   },
+  "apis": {
+    "type": "page",
+    "title": "API",
+    "display": "hidden"
+  },
+  "chat": {
+    "type": "page",
+    "title": "Chat Chat",
+    "display": "hidden"
+  },
+  "notion-blog-react": {
+    "type": "page",
+    "title": "Notion Blog React",
+    "display": "hidden"
+  },
+  "notion-photo-react": {
+    "type": "page",
+    "title": "Notion Photo React",
+    "display": "hidden"
+  },
+  "rail": {
+    "type": "page",
+    "title": "UK Rail",
+    "display": "hidden"
+  },
+  "tfl-tube": {
+    "type": "page",
+    "title": "TFL Tube",
+    "display": "hidden"
+  },
   "about": {
     "title": "About",
     "type": "page",
