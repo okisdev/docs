@@ -2,38 +2,67 @@ import { Callout } from 'nextra/components';
 
 # Chat Chat 部署
 
-<Callout type="info">
+<Callout type="warning">
 
-如果你需要数据库功能并允许用户注册，请确保
-
-1. 你的数据库是由 Postgresql 提供的。
-
-2. 你的数据库确实有存储用户信息的表，初次部署需要运行 `npx prisma db push` 以投射数据库结构。
-
-3. 你的数据库可以从互联网上访问。
+在 v0.1.0 及其之后的版本中，我们将不再支持数据库。
 
 </Callout>
 
 ## 前提条件
 
--   来自 OpenAI, Azure, Claude, Cohere, Hugging Face 等的 API 密钥，任意一个即可
+<Callout type="info">
 
-如果你需要仪表盘的功能，你还需要：
+只是部署的话，无需任何前提条件。
 
--   Postgresql 数据库（Vercel Storage, Supabase 或者其他平台的 postgresql 都可以）
+</Callout>
+
+-   如果需要使用部署后的服务，以下任意服务的 API 密钥
+    -   [Anthropic](https://anthropic.com)
+    -   [Cohere](https://cohere.ai)
+    -   [Fireworks](https://fireworks.ai)
+    -   [Google](https://ai.google.dev)
+    -   [Groq](https://groq.com)
+    -   [Hugging Face](https://huggingface.co)
+    -   [Mistral](https://mistral.com)
+    -   [OpenAI](https://openai.com)
+    -   [Perplexity](https://perplexity.com)
+-   或，您可以使用自己的模型搭配以上对应的 API 端口
 
 ## 环境变量
 
-| 变量名称          | 描述                  | 默认 | 是否强制需要 | 提示                                                                                                |
-| ----------------- | --------------------- | ---- | ------------ | --------------------------------------------------------------------------------------------------- |
-| `DATABASE_URL`    | Postgresql 数据库地址 |      | **Yes**      | 以 `postgresql://` 开头 （如果不需要，请填写 `postgresql://user:password@example.com:port/dbname`） |
-| `NEXTAUTH_URL`    | 您的网站 URL          |      | **Yes**      | （带前缀）                                                                                          |
-| `NEXTAUTH_SECRET` | NextAuth Secret       |      | **Yes**      | 随机哈希数值（16 位最佳）                                                                           |
-| `EMAIL_HOST`      | SMTP Host             |      | No           |                                                                                                     |
-| `EMAIL_PORT`      | SMTP Port             | 587  | No           |                                                                                                     |
-| `EMAIL_USERNAME`  | SMTP username         |      | No           |                                                                                                     |
-| `EMAIL_PASSWORD`  | SMTP password         |      | No           |                                                                                                     |
-| `EMAIL_FROM`      | SMTP 发送地址         |      | No           |                                                                                                     |
+| 变量名称                           | 描述                               | 默认  | 是否强制需要 |
+| ---------------------------------- | ---------------------------------- | ----- | ------------ |
+| Anthropic                          |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_ANTHROPIC`     | 是否允许公开使用 Anthropic 服务    | false | No           |
+| `ANTHROPIC_API_KEY`                | Anthropic API 密钥                 |       | No           |
+| Cohere                             |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_COHERE`        | 是否允许公开使用 Cohere 服务       | false | No           |
+| `COHERE_API_KEY`                   | Cohere API 密钥                    |       | No           |
+| Fireworks                          |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_FIREWORKS`     | 是否允许公开使用 Fireworks 服务    | false | No           |
+| `FIREWORKS_API_KEY`                | Fireworks API 密钥                 |       | No           |
+| Google                             |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_GOOGLE`        | 是否允许公开使用 Google 服务       | false | No           |
+| `GOOGLE_API_KEY`                   | Google API 密钥                    |       | No           |
+| Groq                               |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_GROQ`          | 是否允许公开使用 Groq 服务         | false | No           |
+| `GROQ_API_KEY`                     | Groq API 密钥                      |       | No           |
+| Hugging Face                       |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_HUGGINGFACE`   | 是否允许公开使用 Hugging Face 服务 | false | No           |
+| `HUGGINGFACE_API_KEY`              | Hugging Face API 密钥              |       | No           |
+| Mistral                            |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_MISTRAL`       | 是否允许公开使用 Mistral 服务      | false | No           |
+| `MISTRAL_API_KEY`                  | Mistral API 密钥                   |       | No           |
+| OpenAI                             |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_OPENAI`        | 是否允许公开使用 OpenAI 服务       | false | No           |
+| `OPENAI_API_KEY`                   | OpenAI API 密钥                    |       | No           |
+| `OPENAI_API_ENDPOINT`              | OpenAI API 端点                    |       | No           |
+| Perplexity                         |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_PERPLEXITY`    | 是否允许公开使用 Perplexity 服务   | false | No           |
+| `PERPLEXITY_API_KEY`               | Perplexity API 密钥                |       | No           |
+| Tavily 搜索                        |                                    |       |              |
+| `NEXT_PUBLIC_ACCESS_TAVILY_SEARCH` | 是否允许公开使用 Tavily 服务       | false | No           |
+| `TAVILY_SEARCH_API_KEY`            | Tavily API 密钥                    |       | No           |
 
 ## 部署
 
@@ -62,29 +91,14 @@ import { Callout } from 'nextra/components';
 4. 运行
 
     ```bash
-    pnpm dev
+    pnpm run dev
     ```
 
-### 部署到 Zeabur
-
-访问 [Zeabur](https://zeabur.com) 来部署
-
-### 部署到 Railway
+### 第三方部署
 
 [![部署到 Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
 
-### 部署到 Vercel
-
 [![Deployed in Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
-
-或者
-
-1.  Fork 本仓库
-2.  在 Vercel 上创建一个新项目
-    ![](/chat/assets/Vercel-1.png)
-3.  在项目设置中添加环境变量（以下是强制要求的）
-    ![](/chat/assets/Vercel-2.png)
-4.  部署
 
 ### 使用 Docker 部署
 
@@ -98,11 +112,11 @@ import { Callout } from 'nextra/components';
 
     ```bash
     docker build -t chatchat .
-    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM=""
+    docker run -p 3000:3000 chatchat
     ```
 
 或者使用 Docker Hub 上的镜像
 
 ```bash
-docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM="" ghcr.io/okisdev/chatchat:latest
+docker run -p 3000:3000 ghcr.io/okisdev/chatchat:latest
 ```

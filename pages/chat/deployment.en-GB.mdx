@@ -1,49 +1,80 @@
 import { Callout } from 'nextra/components';
 
-# Chat Chat Deployment
+# Deploying Chat Chat
 
-<Callout type="info">
+<Callout type='warning'>
 
-If you need the database function and allow user registration, please make sure
-
-1. Your database is powered by Postgresql.
-2. Your database do have the tables to store user information, please run `npx prisma db push` to reflect the database structure at the first time set up.
-3. Your database is accessible from the Internet.
+Starting from v0.1.0 and beyond, we will no longer support database integration.
 
 </Callout>
 
-## Prerequisite
+## Prerequisites
 
--   API keys from OpenAI, Azure, Claude, Cohere, Hugging Face, etc., any one will do
+<Callout type='info'>
 
-If you need the functionality of a dashboard, you will also need:
+No prerequisites are required for deployment alone.
 
--   Postgresql database (Vercel Storage, Supabase or other platform postgresql are available)
+</Callout>
+
+-   If you need to use the deployed service, you will need the API keys for any of the following services:
+    -   [Anthropic](https://anthropic.com)
+    -   [Cohere](https://cohere.ai)
+    -   [Fireworks](https://fireworks.ai)
+    -   [Google](https://ai.google.dev)
+    -   [Groq](https://groq.com)
+    -   [Hugging Face](https://huggingface.co)
+    -   [Mistral](https://mistral.com)
+    -   [OpenAI](https://openai.com)
+    -   [Perplexity](https://perplexity.com)
+-   Or, you can use your own models with the corresponding API endpoints.
 
 ## Environment Variables
 
-| variable name     | description                 | default | mandatory | tips                                                                                                              |
-| ----------------- | --------------------------- | ------- | --------- | ----------------------------------------------------------------------------------------------------------------- |
-| `DATABASE_URL`    | Postgresql database address |         | **Yes**   | Start with `postgresql://` (if not required, please fill in `postgresql://user:password@example.com:port/dbname`) |
-| `NEXTAUTH_URL`    | Your website URL            |         | **Yes**   | (with prefix)                                                                                                     |
-| `NEXTAUTH_SECRET` | NextAuth Secret             |         | **Yes**   | Random hash (16 bits is best)                                                                                     |
-| `EMAIL_HOST`      | SMTP Host                   |         | No        |                                                                                                                   |
-| `EMAIL_PORT`      | SMTP Port                   | 587     | No        |                                                                                                                   |
-| `EMAIL_USERNAME`  | SMTP username               |         | No        |                                                                                                                   |
-| `EMAIL_PASSWORD`  | SMTP password               |         | No        |                                                                                                                   |
-| `EMAIL_FROM`      | SMTP sending address        |         | No        |                                                                                                                   |
+| Variable Name                      | Description                         | Default | Required |
+| ---------------------------------- | ----------------------------------- | ------- | -------- |
+| Anthropic                          |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_ANTHROPIC`     | Allow public access to Anthropic    | false   | No       |
+| `ANTHROPIC_API_KEY`                | Anthropic API key                   |         | No       |
+| Cohere                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_COHERE`        | Allow public access to Cohere       | false   | No       |
+| `COHERE_API_KEY`                   | Cohere API key                      |         | No       |
+| Fireworks                          |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_FIREWORKS`     | Allow public access to Fireworks    | false   | No       |
+| `FIREWORKS_API_KEY`                | Fireworks API key                   |         | No       |
+| Google                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_GOOGLE`        | Allow public access to Google       | false   | No       |
+| `GOOGLE_API_KEY`                   | Google API key                      |         | No       |
+| Groq                               |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_GROQ`          | Allow public access to Groq         | false   | No       |
+| `GROQ_API_KEY`                     | Groq API key                        |         | No       |
+| Hugging Face                       |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_HUGGINGFACE`   | Allow public access to Hugging Face | false   | No       |
+| `HUGGINGFACE_API_KEY`              | Hugging Face API key                |         | No       |
+| Mistral                            |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_MISTRAL`       | Allow public access to Mistral      | false   | No       |
+| `MISTRAL_API_KEY`                  | Mistral API key                     |         | No       |
+| OpenAI                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_OPENAI`        | Allow public access to OpenAI       | false   | No       |
+| `OPENAI_API_KEY`                   | OpenAI API key                      |         | No       |
+| `OPENAI_API_ENDPOINT`              | OpenAI API endpoint                 |         | No       |
+| Perplexity                         |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_PERPLEXITY`    | Allow public access to Perplexity   | false   | No       |
+| `PERPLEXITY_API_KEY`               | Perplexity API key                  |         | No       |
+| Tavily Search                      |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_TAVILY_SEARCH` | Allow public access to Tavily       | false   | No       |
+| `TAVILY_SEARCH_API_KEY`            | Tavily API key                      |         | No       |
 
 ## Deployment
 
 ### Local Deployment
 
-1. clone the Repo
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/okisdev/ChatChat.git
     ```
 
-2. Installing dependencies
+2. Install dependencies:
 
     ```bash
     cd ChatChat
@@ -51,56 +82,41 @@ If you need the functionality of a dashboard, you will also need:
     pnpm install
     ```
 
-3. Create the `.env.local` file and fill in the environment variables
+3. Create the `.env.local` file and fill in the environment variables:
 
     ```bash
     cp .env.local.example .env.local
     ```
 
-4. Run
+4. Run the application:
 
     ```bash
-    pnpm dev
+    pnpm run dev
     ```
 
-### Deploy to Zeabur
+### Third-Party Deployment
 
-Visit [Zeabur](https://zeabur.com) to deploy
-
-### Deploy to Railway
-
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
-
-### Deploy to Vercel
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
 
 [![Deployed in Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
 
-OR
+### Docker Deployment
 
-1. Fork this repo
-2. Create a new project on Vercel
-   ![](/chat/assets/Vercel-1.png)
-3. Add environment variables to the project settings (the following are forced required)
-   ![](/chat/assets/Vercel-2.png)
-4. Deploy
-
-### Deploy with Docker
-
-1. Clone the Repo
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/okisdev/ChatChat.git
     ```
 
-2. Run the following command to build the image
+2. Build the Docker image:
 
     ```bash
     docker build -t chatchat .
-    docker run -p 3000:3000 chatchat -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM=""
+    docker run -p 3000:3000 chatchat
     ```
 
-OR use the image from Docker Hub
+Or use the image from Docker Hub:
 
 ```bash
-docker run -p 3000:3000 -e DATABASE_URL="" -e NEXTAUTH_URL="" -e NEXTAUTH_SECRET="" -e EMAIL_HOST="" -e EMAIL_PORT="" -e EMAIL_USERNAME="" -e EMAIL_PASSWORD="" -e EMAIL_FROM="" ghcr.io/okisdev/chatchat:latest
+docker run -p 3000:3000 ghcr.io/okisdev/chatchat:latest
 ```
