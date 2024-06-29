@@ -1,0 +1,9 @@
+{
+  "title": "Notion Blog React",
+  "root": true,
+  "pages": [
+    "index",
+    "advanced-configuration",
+    "faq"
+  ]
+}

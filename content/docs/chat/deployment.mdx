@@ -1,0 +1,125 @@
+---
+title: Deploying Chat Chat
+description: Deploying Chat Chat
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+<Callout type='warning'>
+
+Starting from v0.1.0 and beyond, we will no longer support database integration.
+
+</Callout>
+
+## Prerequisites
+
+<Callout type='info'>
+
+No prerequisites are required for deployment alone.
+
+</Callout>
+
+-   If you need to use the deployed service, you will need the API keys for any of the following services:
+    -   [Anthropic](https://anthropic.com)
+    -   [Cohere](https://cohere.ai)
+    -   [Fireworks](https://fireworks.ai)
+    -   [Google](https://ai.google.dev)
+    -   [Groq](https://groq.com)
+    -   [Hugging Face](https://huggingface.co)
+    -   [Mistral](https://mistral.com)
+    -   [OpenAI](https://openai.com)
+    -   [Perplexity](https://perplexity.com)
+-   Or, you can use your own models with the corresponding API endpoints.
+
+## Environment Variables
+
+| Variable Name                      | Description                         | Default | Required |
+| ---------------------------------- | ----------------------------------- | ------- | -------- |
+| Anthropic                          |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_ANTHROPIC`     | Allow public access to Anthropic    | false   | No       |
+| `ANTHROPIC_API_KEY`                | Anthropic API key                   |         | No       |
+| Cohere                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_COHERE`        | Allow public access to Cohere       | false   | No       |
+| `COHERE_API_KEY`                   | Cohere API key                      |         | No       |
+| Fireworks                          |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_FIREWORKS`     | Allow public access to Fireworks    | false   | No       |
+| `FIREWORKS_API_KEY`                | Fireworks API key                   |         | No       |
+| Google                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_GOOGLE`        | Allow public access to Google       | false   | No       |
+| `GOOGLE_API_KEY`                   | Google API key                      |         | No       |
+| Groq                               |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_GROQ`          | Allow public access to Groq         | false   | No       |
+| `GROQ_API_KEY`                     | Groq API key                        |         | No       |
+| Hugging Face                       |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_HUGGINGFACE`   | Allow public access to Hugging Face | false   | No       |
+| `HUGGINGFACE_API_KEY`              | Hugging Face API key                |         | No       |
+| Mistral                            |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_MISTRAL`       | Allow public access to Mistral      | false   | No       |
+| `MISTRAL_API_KEY`                  | Mistral API key                     |         | No       |
+| OpenAI                             |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_OPENAI`        | Allow public access to OpenAI       | false   | No       |
+| `OPENAI_API_KEY`                   | OpenAI API key                      |         | No       |
+| `OPENAI_API_ENDPOINT`              | OpenAI API endpoint                 |         | No       |
+| Perplexity                         |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_PERPLEXITY`    | Allow public access to Perplexity   | false   | No       |
+| `PERPLEXITY_API_KEY`               | Perplexity API key                  |         | No       |
+| Tavily Search                      |                                     |         |          |
+| `NEXT_PUBLIC_ACCESS_TAVILY_SEARCH` | Allow public access to Tavily       | false   | No       |
+| `TAVILY_SEARCH_API_KEY`            | Tavily API key                      |         | No       |
+
+## Deployment
+
+### Local Deployment
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/okisdev/ChatChat.git
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    cd ChatChat
+    npm install -g pnpm
+    pnpm install
+    ```
+
+3. Create the `.env.local` file and fill in the environment variables:
+
+    ```bash
+    cp .env.local.example .env.local
+    ```
+
+4. Run the application:
+
+    ```bash
+    pnpm run dev
+    ```
+
+### Third-Party Deployment
+
+[![Deploy to Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
+
+[![Deployed in Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
+
+### Docker Deployment
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/okisdev/ChatChat.git
+    ```
+
+2. Build the Docker image:
+
+    ```bash
+    docker build -t chatchat .
+    docker run -p 3000:3000 chatchat
+    ```
+
+Or use the image from Docker Hub:
+
+```bash
+docker run -p 3000:3000 ghcr.io/okisdev/chatchat:latest
+```
