@@ -13,71 +13,71 @@ description: 进阶配置
 
 路径: `global.language.default`
 
--   `default: 'en-GB'` (默认)
--   `default: 'zh-CN'`
+- `default: 'en-GB'` (默认)
+- `default: 'zh-CN'`
 
 ### 导航栏
 
--   atom:
+- atom:
 
-    路径: `global.navbar.atom`
+  路径: `global.navbar.atom`
 
-    -   `shown: true` (默认)
-    -   `shown: false`
+  - `shown: true` (默认)
+  - `shown: false`
 
--   github:
+- github:
 
-    路径: `global.navbar.github`
+  路径: `global.navbar.github`
 
-    -   `shown: true` (默认)
-    -   `shown: false`
+  - `shown: true` (默认)
+  - `shown: false`
 
--   email:
+- email:
 
-    路径: `global.navbar.email`
+  路径: `global.navbar.email`
 
-    -   `shown: true`
-    -   `shown: false` (默认)
+  - `shown: true`
+  - `shown: false` (默认)
 
--   privacy_policy:
+- privacy_policy:
 
-    路径: `global.navbar.privacy_policy`
+  路径: `global.navbar.privacy_policy`
 
-    -   `shown: true` (默认)
-    -   `shown: false`
+  - `shown: true` (默认)
+  - `shown: false`
 
--   language:
+- language:
 
-    路径: `global.navbar.language`
+  路径: `global.navbar.language`
 
-    -   `shown: true` (默认)
-    -   `shown: false`
+  - `shown: true` (默认)
+  - `shown: false`
 
 ### 页尾
 
--   poweredByVercel:
+- poweredByVercel:
 
-    路径: `global.footer.poweredByVercel`
+  路径: `global.footer.poweredByVercel`
 
-    -   `shown: true` (默认)
+  - `shown: true` (默认)
 
-        ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
+    ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
 
-    -   `shown: false`
+  - `shown: false`
 
-        ![global.footer.poweredByVercel.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
+    ![global.footer.poweredByVercel.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
 
--   themeSwitcher:
+- themeSwitcher:
 
-    路径: `global.footer.themeSwitcher`
+  路径: `global.footer.themeSwitcher`
 
-    -   `shown: true` (默认)
+  - `shown: true` (默认)
 
-        ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
+    ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
 
-    -   `shown: false`
+  - `shown: false`
 
-        ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
+    ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
 
 ## 主页
 
@@ -85,25 +85,25 @@ description: 进阶配置
 
 路径: `home.header.avatar`
 
--   `shown: true` (默认)
+- `shown: true` (默认)
 
-    ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
+  ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
+  ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
 
 ### Blog Card 信息详情显示模式
 
 路径: `home.card.mode`
 
--   `mode: 0`
+- `mode: 0`
 
-    ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
+  ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
--   `mode: 1` (默认)
+- `mode: 1` (默认)
 
-    ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
+  ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
 ### Blog Card 信息详情显示日期 - 区域设置
 
@@ -119,22 +119,22 @@ description: 进阶配置
 
 路径: `posts.collection`
 
--   `shown: true` (默认)
+- `shown: true` (默认)
 
-    ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
+  ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![posts.collection.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
+  ![posts.collection.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
 
 ### Table of Content
 
 路径: `posts.toc`
 
--   `shown: true` (默认)
+- `shown: true` (默认)
 
-    ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
+  ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![posts.toc.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)
+  ![posts.toc.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)

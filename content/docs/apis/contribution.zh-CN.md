@@ -60,7 +60,7 @@ If the required query parameters are not provided, the API will return an HTTP 4
 
 ```json
 {
-    "error": "No username and year provided."
+  "error": "No username and year provided."
 }
 ```
 

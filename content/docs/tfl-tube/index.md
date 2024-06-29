@@ -13,7 +13,7 @@ This is a documentation of the TfL Tube. It is a work in progress, and is not co
 
 ### Desktop
 
--   Just visit [tube.okis.dev](https://tube.okis.dev) and you will be able to see the status of the tube lines.
+- Just visit [tube.okis.dev](https://tube.okis.dev) and you will be able to see the status of the tube lines.
 
 ### Mobile
 

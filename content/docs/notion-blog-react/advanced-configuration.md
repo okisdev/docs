@@ -13,71 +13,71 @@ You will be able to change them in [`config/mode.config.js`](https://github.com/
 
 path: `global.language.default`
 
--   `default: 'en-GB'` (default)
--   `default: 'zh-CN'`
+- `default: 'en-GB'` (default)
+- `default: 'zh-CN'`
 
 ### Navbar
 
--   atom:
+- atom:
 
-    path: `global.navbar.atom`
+  path: `global.navbar.atom`
 
-    -   `shown: true` (default)
-    -   `shown: false`
+  - `shown: true` (default)
+  - `shown: false`
 
--   github:
+- github:
 
-    path: `global.navbar.github`
+  path: `global.navbar.github`
 
-    -   `shown: true` (default)
-    -   `shown: false`
+  - `shown: true` (default)
+  - `shown: false`
 
--   email:
+- email:
 
-    path: `global.navbar.email`
+  path: `global.navbar.email`
 
-    -   `shown: true`
-    -   `shown: false` (default)
+  - `shown: true`
+  - `shown: false` (default)
 
--   privacy_policy:
+- privacy_policy:
 
-    path: `global.navbar.privacy_policy`
+  path: `global.navbar.privacy_policy`
 
-    -   `shown: true` (default)
-    -   `shown: false`
+  - `shown: true` (default)
+  - `shown: false`
 
--   language:
+- language:
 
-    path: `global.navbar.language`
+  path: `global.navbar.language`
 
-    -   `shown: true` (default)
-    -   `shown: false`
+  - `shown: true` (default)
+  - `shown: false`
 
 ### Footer
 
--   poweredByVercel:
+- poweredByVercel:
 
-    path: `global.footer.poweredByVercel`
+  path: `global.footer.poweredByVercel`
 
-    -   `shown: true` (default)
+  - `shown: true` (default)
 
-        ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
+    ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
 
-    -   `shown: false`
+  - `shown: false`
 
-        ![global.footer.poweredByVercel.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
+    ![global.footer.poweredByVercel.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
 
--   themeSwitcher:
+- themeSwitcher:
 
-    path: `global.footer.themeSwitcher`
+  path: `global.footer.themeSwitcher`
 
-    -   `shown: true` (default)
+  - `shown: true` (default)
 
-        ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
+    ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
 
-    -   `shown: false`
+  - `shown: false`
 
-        ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
+    ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
 
 ## Homepage
 
@@ -85,25 +85,25 @@ path: `global.language.default`
 
 path: `home.header.avatar`
 
--   `shown: true` (default)
+- `shown: true` (default)
 
-    ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
+  ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
+  ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
 
 ### Blog Card Information Details Display Mode
 
 path: `home.card.mode`
 
--   `mode: 0`
+- `mode: 0`
 
-    ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
+  ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
--   `mode: 1` (default)
+- `mode: 1` (default)
 
-    ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
+  ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
 ### Blog Card Information Details Date - Locale
 
@@ -119,22 +119,22 @@ Please check [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 path: `posts.collection`
 
--   `shown: true` (default)
+- `shown: true` (default)
 
-    ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
+  ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![posts.collection.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
+  ![posts.collection.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
 
 ### Table of Content
 
 path: `posts.toc`
 
--   `shown: true` (default)
+- `shown: true` (default)
 
-    ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
+  ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
 
--   `shown: false`
+- `shown: false`
 
-    ![posts.toc.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)
+  ![posts.toc.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)

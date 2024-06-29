@@ -1,8 +1,5 @@
 {
   "title": "TfL Tube",
   "root": true,
-  "pages": [
-    "index",
-    "API"
-  ]
+  "pages": ["index", "API"]
 }

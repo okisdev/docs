@@ -19,17 +19,17 @@ import { Callout } from 'fumadocs-ui/components/callout';
 
 </Callout>
 
--   如果需要使用部署后的服务，以下任意服务的 API 密钥
-    -   [Anthropic](https://anthropic.com)
-    -   [Cohere](https://cohere.ai)
-    -   [Fireworks](https://fireworks.ai)
-    -   [Google](https://ai.google.dev)
-    -   [Groq](https://groq.com)
-    -   [Hugging Face](https://huggingface.co)
-    -   [Mistral](https://mistral.com)
-    -   [OpenAI](https://openai.com)
-    -   [Perplexity](https://perplexity.com)
--   或，您可以使用自己的模型搭配以上对应的 API 端口
+- 如果需要使用部署后的服务，以下任意服务的 API 密钥
+  - [Anthropic](https://anthropic.com)
+  - [Cohere](https://cohere.ai)
+  - [Fireworks](https://fireworks.ai)
+  - [Google](https://ai.google.dev)
+  - [Groq](https://groq.com)
+  - [Hugging Face](https://huggingface.co)
+  - [Mistral](https://mistral.com)
+  - [OpenAI](https://openai.com)
+  - [Perplexity](https://perplexity.com)
+- 或，您可以使用自己的模型搭配以上对应的 API 端口
 
 ## 环境变量
 
@@ -73,29 +73,29 @@ import { Callout } from 'fumadocs-ui/components/callout';
 
 1. git clone 本仓库
 
-    ```bash
-    git clone https://github.com/okisdev/ChatChat.git
-    ```
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
 
 2. 安装依赖
 
-    ```bash
-    cd ChatChat
-    npm install -g pnpm
-    pnpm install
-    ```
+   ```bash
+   cd ChatChat
+   npm install -g pnpm
+   pnpm install
+   ```
 
 3. 创建 `.env.local` 文件并填写环境变量
 
-    ```bash
-    cp .env.local.example .env.local
-    ```
+   ```bash
+   cp .env.local.example .env.local
+   ```
 
 4. 运行
 
-    ```bash
-    pnpm run dev
-    ```
+   ```bash
+   pnpm run dev
+   ```
 
 ### 第三方部署
 
@@ -107,16 +107,16 @@ import { Callout } from 'fumadocs-ui/components/callout';
 
 1. 克隆 Repo
 
-    ```bash
-    git clone https://github.com/okisdev/ChatChat.git
-    ```
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
 
 2. 运行以下命令来构建镜像
 
-    ```bash
-    docker build -t chatchat .
-    docker run -p 3000:3000 chatchat
-    ```
+   ```bash
+   docker build -t chatchat .
+   docker run -p 3000:3000 chatchat
+   ```
 
 或者使用 Docker Hub 上的镜像
 

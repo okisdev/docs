@@ -44,45 +44,45 @@ Notion Blog React 是一个由 Notion 提供支持，使用 React、Next.JS、ta
 
 ```js
 module.exports = {
-    global: {
-        author: {
-            name: 'Harry Yep', // Blog 作者
-            github: 'https://github.com/okisdev/Notion-Blog-React', // Blog 作者的 GitHub
-            email: 'hi@harrly.com', // Blog 作者邮箱
-            privacy_policy: 'https://www.harrly.com/privacy-policy', // Blog 隐私政策
-        },
-        site: {
-            name: 'Notion Blog React Example', // Blog 标题
-            description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // Blog 描述
-            url: 'https://nbr.okis.dev/', // The blog URL
-            banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`, // The Blog Open Graph image
-            language: [
-                // The supported language of the Blog (Not recommand to change, only support **简体中文** and **British England** so far)
-                {
-                    name: 'British English', // The language name (Default is **British English**)
-                    code: 'en-GB', // The language code, this is related the URL you visited. For example, `blog.example.com/zh-CN` stand for **简体中文** of the blog.
-                },
-                {
-                    name: 'Simplified Chinese',
-                    code: 'zh-CN',
-                },
-            ],
-        },
-        content: {
-            header: {
-                description: `...`, // The description of the Blog, which will be shown on the header of the page. JSX supported.
-                image_url: 'https://cdn.harrly.com/global/assets/icon/android-chrome-192x192.png', // The header image
-            },
-            license: {
-                name: 'CC BY-NC-SA 4.0', // The License Name
-                url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/', // The License agreement URL
-            },
-        },
-        analytics: {
-            google: '', // The Google Analytics UA Code
-            splitbee: 'O1KKIQNSGP18', // The Splitbee Analytics Code
-        },
+  global: {
+    author: {
+      name: 'Harry Yep', // Blog 作者
+      github: 'https://github.com/okisdev/Notion-Blog-React', // Blog 作者的 GitHub
+      email: 'hi@harrly.com', // Blog 作者邮箱
+      privacy_policy: 'https://www.harrly.com/privacy-policy', // Blog 隐私政策
     },
+    site: {
+      name: 'Notion Blog React Example', // Blog 标题
+      description: 'Blog built with Notion, React, Next.js, tailwindcss, TypeScript, Notion-Api-Worker and more.', // Blog 描述
+      url: 'https://nbr.okis.dev/', // The blog URL
+      banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Blog-React/img/Notion-Blog-React.Banner.png`, // The Blog Open Graph image
+      language: [
+        // The supported language of the Blog (Not recommand to change, only support **简体中文** and **British England** so far)
+        {
+          name: 'British English', // The language name (Default is **British English**)
+          code: 'en-GB', // The language code, this is related the URL you visited. For example, `blog.example.com/zh-CN` stand for **简体中文** of the blog.
+        },
+        {
+          name: 'Simplified Chinese',
+          code: 'zh-CN',
+        },
+      ],
+    },
+    content: {
+      header: {
+        description: `...`, // The description of the Blog, which will be shown on the header of the page. JSX supported.
+        image_url: 'https://cdn.harrly.com/global/assets/icon/android-chrome-192x192.png', // The header image
+      },
+      license: {
+        name: 'CC BY-NC-SA 4.0', // The License Name
+        url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/', // The License agreement URL
+      },
+    },
+    analytics: {
+      google: '', // The Google Analytics UA Code
+      splitbee: 'O1KKIQNSGP18', // The Splitbee Analytics Code
+    },
+  },
 };
 ```
 
@@ -153,21 +153,21 @@ description: Text
 
 1. 要将其部署在 Vercel 上，请访问 Vercel 并单击 `New Project` 按钮。
 
-    ![2.new-project](/docs/notion-blog-react/intro/2.new-project.png)
+   ![2.new-project](/docs/notion-blog-react/intro/2.new-project.png)
 
 2. 导入您 `fork` 的 GitHub 存储库。
 
-    ![3.import](/docs/notion-blog-react/intro/3.import.png)
+   ![3.import](/docs/notion-blog-react/intro/3.import.png)
 
-    配置的结构基本是这样。
+   配置的结构基本是这样。
 
-    <Callout type="info">
+   <Callout type="info">
 
-    添加 `Environment Variables` 很重要，否则部署将失败。
+   添加 `Environment Variables` 很重要，否则部署将失败。
 
-    </Callout>
+   </Callout>
 
-    ![4.configure](/docs/notion-blog-react/intro/4.configure.png)
+   ![4.configure](/docs/notion-blog-react/intro/4.configure.png)
 
 3. 完成所有设置后，单击部署。
 
@@ -188,11 +188,11 @@ description: Text
 3. 从 `.env.example` 复制并粘贴到 `.env.local`。
 4. 在`.env.local`中填写环境变量。
 
-    <Callout type="info">
+   <Callout type="info">
 
-    添加 `Environment Variables` 很重要，否则部署将失败。
+   添加 `Environment Variables` 很重要，否则部署将失败。
 
-    </Callout>
+   </Callout>
 
 5. 在你的项目中运行 `yarn`。
 6. 在你的项目中运行`yarn build && yarn start`。

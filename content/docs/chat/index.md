@@ -9,8 +9,8 @@ This is the documentation for Chat Chat, an AI interaction integration platform 
 
 ## Features
 
--   **Chat** mode: Basic conversational mode with AI, supporting multiple AI engines including OpenAI, Claude, Cohere, Hugging Face, and more.
--   **Search** mode: Retrieve the latest online information using a search engine, currently supporting search powered by OpenAI models combined with Tavily.
+- **Chat** mode: Basic conversational mode with AI, supporting multiple AI engines including OpenAI, Claude, Cohere, Hugging Face, and more.
+- **Search** mode: Retrieve the latest online information using a search engine, currently supporting search powered by OpenAI models combined with Tavily.
 
 ## Deployment
 

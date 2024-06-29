@@ -46,53 +46,53 @@ Notion Photo React 是一个由 Notion 提供支持，使用 React、Next.JS、t
 // Before you make changes to this document, please read https://docs.okis.dev/docs/notion-photo-react#change-the-site-configuration
 
 module.exports = {
-    global: {
-        site: {
-            name: 'Notion Photo React Example',
-            description: 'Photo Gallery built with Notion, React.JS, Next.JS, tailwindcss, TypeScript, notion-api-worker and more.',
-            url: 'https://npr.okis.dev/',
-            author: 'Harry Yep',
-            banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`,
-            nav: [
-                {
-                    name: 'Home',
-                    url: '/',
-                    external: false,
-                    position: 'left',
-                },
-                {
-                    name: 'GitHub',
-                    url: 'https://github.com/okisdev',
-                    external: true,
-                    position: 'right',
-                },
-            ],
-            language: [
-                { name: '🇬🇧 English', code: 'en-GB' },
-                { name: '🇨🇳 简体中文', code: 'zh-CN' },
-                { name: '🇭🇰 繁體中文', code: 'zh-HK' },
-            ],
-            font: '',
+  global: {
+    site: {
+      name: 'Notion Photo React Example',
+      description: 'Photo Gallery built with Notion, React.JS, Next.JS, tailwindcss, TypeScript, notion-api-worker and more.',
+      url: 'https://npr.okis.dev/',
+      author: 'Harry Yep',
+      banner_img: `https://cdn.harrly.com/project/GitHub/Notion-Photo-React/img/Notion-Photo-React.Banner.png`,
+      nav: [
+        {
+          name: 'Home',
+          url: '/',
+          external: false,
+          position: 'left',
         },
-        content: {
-            header: {
-                description: `A Photo Gallery built with <a href='https://notion.so/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion</a>, <a href='https://nextjs.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Next.js</a>, <a href='https://tailwindcss.com/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>tailwindcss</a>, <a href='https://www.typescriptlang.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>TypeScript</a>, <a href='https://github.com/splitbee/notion-api-worker' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion-Api-Worker</a> and more. (Find more on <a href='https://github.com/Harry-Yep/Notion-Photo-React' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>GitHub</a>)`,
-            },
-            license: {
-                name: 'CC BY-NC-SA 4.0',
-                url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
-            },
-            footer: {
-                copyright: 'Copyright © 2023 Harry Yep. All rights reserved.',
-            },
+        {
+          name: 'GitHub',
+          url: 'https://github.com/okisdev',
+          external: true,
+          position: 'right',
         },
-        analytics: {
-            umami: {
-                url: 'https://umami.harisfox.com/script.js',
-                website_id: '4c785146-016d-48b8-81fe-85172c82b37d',
-            },
-        },
+      ],
+      language: [
+        { name: '🇬🇧 English', code: 'en-GB' },
+        { name: '🇨🇳 简体中文', code: 'zh-CN' },
+        { name: '🇭🇰 繁體中文', code: 'zh-HK' },
+      ],
+      font: '',
     },
+    content: {
+      header: {
+        description: `A Photo Gallery built with <a href='https://notion.so/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion</a>, <a href='https://nextjs.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Next.js</a>, <a href='https://tailwindcss.com/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>tailwindcss</a>, <a href='https://www.typescriptlang.org/' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>TypeScript</a>, <a href='https://github.com/splitbee/notion-api-worker' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>Notion-Api-Worker</a> and more. (Find more on <a href='https://github.com/Harry-Yep/Notion-Photo-React' class='transition duration-500 underline hover:bg-yellow-500 dark:hover:bg-yellow-600' target='_blank' rel='noopener noreferrer'>GitHub</a>)`,
+      },
+      license: {
+        name: 'CC BY-NC-SA 4.0',
+        url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+      },
+      footer: {
+        copyright: 'Copyright © 2023 Harry Yep. All rights reserved.',
+      },
+    },
+    analytics: {
+      umami: {
+        url: 'https://umami.harisfox.com/script.js',
+        website_id: '4c785146-016d-48b8-81fe-85172c82b37d',
+      },
+    },
+  },
 };
 ```
 
@@ -162,21 +162,21 @@ url: URL (Your photo image url)
 
 1. 要将其部署在 Vercel 上，请访问 Vercel 并单击 `New Project` 按钮。
 
-    ![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
+   ![2.new-project](/docs/notion-photo-react/intro/2.new-project.png)
 
 2. 导入您 `fork` 的 GitHub 存储库。
 
-    ![3.import](/docs/notion-photo-react/intro/3.import.png)
+   ![3.import](/docs/notion-photo-react/intro/3.import.png)
 
-    配置的结构基本是这样。
+   配置的结构基本是这样。
 
-    <Callout type="info">
+   <Callout type="info">
 
-    添加 `Environment Variables` 很重要，否则部署将失败。
+   添加 `Environment Variables` 很重要，否则部署将失败。
 
-    </Callout>
+   </Callout>
 
-    ![4.configure](/docs/notion-photo-react/intro/4.configure.png)
+   ![4.configure](/docs/notion-photo-react/intro/4.configure.png)
 
 3. 完成所有设置后，单击部署。
 
@@ -197,11 +197,11 @@ url: URL (Your photo image url)
 3. 从 `.env.example` 复制并粘贴到 `.env.local`。
 4. 在`.env.local`中填写环境变量。
 
-    <Callout type="info">
+   <Callout type="info">
 
-    添加 `Environment Variables` 很重要，否则部署将失败。
+   添加 `Environment Variables` 很重要，否则部署将失败。
 
-    </Callout>
+   </Callout>
 
 5. 在你的项目中运行 `yarn`。
 6. 在你的项目中运行`yarn build && yarn start`。

@@ -9,8 +9,8 @@ description: Chat Chat 文档
 
 ## 特点
 
--   **聊天**模式：基本的与 AI 对话模式，支持多种 AI 引擎，包括 OpenAI, Claude, Cohere, Hugging Face 等。
--   **搜索**模式：通过搜索引擎来获取在线的最新的信息，目前支持通过 OpenAI 的模型并结合 Tavily 进行搜索。
+- **聊天**模式：基本的与 AI 对话模式，支持多种 AI 引擎，包括 OpenAI, Claude, Cohere, Hugging Face 等。
+- **搜索**模式：通过搜索引擎来获取在线的最新的信息，目前支持通过 OpenAI 的模型并结合 Tavily 进行搜索。
 
 ## 部署
 

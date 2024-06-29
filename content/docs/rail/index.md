@@ -13,7 +13,7 @@ This is a documentation of the Rail. It is a work in progress, and is not comple
 
 ### Desktop
 
--   Just visit [rail.okis.dev](https://rail.okis.dev) and you will be able to see the status of the rail lines.
+- Just visit [rail.okis.dev](https://rail.okis.dev) and you will be able to see the status of the rail lines.
 
 ### Mobile
 

@@ -19,17 +19,17 @@ No prerequisites are required for deployment alone.
 
 </Callout>
 
--   If you need to use the deployed service, you will need the API keys for any of the following services:
-    -   [Anthropic](https://anthropic.com)
-    -   [Cohere](https://cohere.ai)
-    -   [Fireworks](https://fireworks.ai)
-    -   [Google](https://ai.google.dev)
-    -   [Groq](https://groq.com)
-    -   [Hugging Face](https://huggingface.co)
-    -   [Mistral](https://mistral.com)
-    -   [OpenAI](https://openai.com)
-    -   [Perplexity](https://perplexity.com)
--   Or, you can use your own models with the corresponding API endpoints.
+- If you need to use the deployed service, you will need the API keys for any of the following services:
+  - [Anthropic](https://anthropic.com)
+  - [Cohere](https://cohere.ai)
+  - [Fireworks](https://fireworks.ai)
+  - [Google](https://ai.google.dev)
+  - [Groq](https://groq.com)
+  - [Hugging Face](https://huggingface.co)
+  - [Mistral](https://mistral.com)
+  - [OpenAI](https://openai.com)
+  - [Perplexity](https://perplexity.com)
+- Or, you can use your own models with the corresponding API endpoints.
 
 ## Environment Variables
 
@@ -73,29 +73,29 @@ No prerequisites are required for deployment alone.
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/okisdev/ChatChat.git
-    ```
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
 
 2. Install dependencies:
 
-    ```bash
-    cd ChatChat
-    npm install -g pnpm
-    pnpm install
-    ```
+   ```bash
+   cd ChatChat
+   npm install -g pnpm
+   pnpm install
+   ```
 
 3. Create the `.env.local` file and fill in the environment variables:
 
-    ```bash
-    cp .env.local.example .env.local
-    ```
+   ```bash
+   cp .env.local.example .env.local
+   ```
 
 4. Run the application:
 
-    ```bash
-    pnpm run dev
-    ```
+   ```bash
+   pnpm run dev
+   ```
 
 ### Third-Party Deployment
 
@@ -107,16 +107,16 @@ No prerequisites are required for deployment alone.
 
 1. Clone the repository:
 
-    ```bash
-    git clone https://github.com/okisdev/ChatChat.git
-    ```
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
 
 2. Build the Docker image:
 
-    ```bash
-    docker build -t chatchat .
-    docker run -p 3000:3000 chatchat
-    ```
+   ```bash
+   docker build -t chatchat .
+   docker run -p 3000:3000 chatchat
+   ```
 
 Or use the image from Docker Hub:
 

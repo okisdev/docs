@@ -1,9 +1,5 @@
 {
   "title": "Notion Photo React",
   "root": true,
-  "pages": [
-    "index",
-    "advanced-configuration",
-    "faq"
-  ]
+  "pages": ["index", "advanced-configuration", "faq"]
 }
