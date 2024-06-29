@@ -1,14 +1,19 @@
-import nextra from 'nextra';
+import { remarkImage } from 'fumadocs-core/mdx-plugins';
+import createMDX from 'fumadocs-mdx/config';
 
-const withNextra = nextra({
-    theme: 'nextra-theme-docs',
-    themeConfig: './theme.config.jsx',
-    latex: true,
+const withMDX = createMDX({
+  mdxOptions: {
+    lastModifiedTime: true,
+    remarkPlugins: [remarkImage],
+  },
 });
 
-export default withNextra({
-    i18n: {
-        locales: ['en-GB', 'zh-CN'],
-        defaultLocale: 'en-GB',
-    },
-});
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+};
+
+export default withMDX(config);

@@ -1,32 +1,3 @@
-.hover-underline-animation {
-    @apply relative inline-flex flex-row items-center;
-}
-
-.hover-underline-animation:after {
-    @apply absolute -bottom-0.5 left-0 h-0.5 w-full origin-bottom-right scale-x-0 bg-zinc-400 transition duration-500 ease-in-out content-[''] dark:bg-stone-300 !important;
-}
-
-.hover-underline-animation:hover:after {
-    @apply origin-bottom-left scale-x-100 appearance-none !important;
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: -20rem 0;
-    }
-    100% {
-        background-position: 20rem 0;
-    }
-}
-
-.skeleton {
-    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
-    background-size: 20rem 100%;
-    animation: shimmer 1s infinite linear;
-}
-
-@media (prefers-color-scheme: dark) {
-    .skeleton {
-        background: linear-gradient(to right, #333333 0%, #444444 20%, #333333 40%, #333333 100%);
-    }
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
