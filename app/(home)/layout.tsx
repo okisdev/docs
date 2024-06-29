@@ -1,4 +1,4 @@
-import { projects } from '@/config/projects';
+import { projects } from '@/config/project';
 import { RootToggle } from 'fumadocs-ui/components/layout/root-toggle';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
