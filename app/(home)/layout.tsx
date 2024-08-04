@@ -6,6 +6,7 @@ import { FaGithub } from 'react-icons/fa';
 
 export default function HomeLayout({ children }: Readonly<{ children: ReactNode }>) {
   const currentYear = new Date().getFullYear();
+
   return (
     <div className='min-h-screen'>
       <header className='sticky top-0 z-50 flex w-full items-center justify-between bg-zinc-200/60 px-6 py-2 backdrop-blur dark:bg-zinc-800/60'>
