@@ -13,7 +13,7 @@
   "dependencies": {
     "axios": "^1.7.3",
     "fumadocs-core": "13.0.5",
-    "fumadocs-mdx": "9.0.0",
+    "fumadocs-mdx": "9.0.4",
     "fumadocs-ui": "13.0.5",
     "next": "^14.2.5",
     "prettier": "^3.3.3",
