@@ -1,0 +1,125 @@
+---
+title: 部署 Chat Chat
+description: 部署 Chat Chat
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+<Callout type="warning">
+
+從 v0.1.0 版本開始，我們將不再支援數據庫。
+
+</Callout>
+
+## 前置要求
+
+<Callout type="info">
+
+如果只是部署的話，不需要任何前置要求。
+
+</Callout>
+
+- 如果需要使用已部署的服務，以下任何服務的 API 金鑰：
+  - [Anthropic](https://anthropic.com)
+  - [Cohere](https://cohere.ai)
+  - [Fireworks](https://fireworks.ai)
+  - [Google](https://ai.google.dev)
+  - [Groq](https://groq.com)
+  - [Hugging Face](https://huggingface.co)
+  - [Mistral](https://mistral.com)
+  - [OpenAI](https://openai.com)
+  - [Perplexity](https://perplexity.com)
+- 或者，你可以使用自己的模型配合相應的 API 端點
+
+## 環境變數
+
+| 變數名稱                           | 描述                               | 預設值 | 是否必需 |
+| ---------------------------------- | ---------------------------------- | ------ | -------- |
+| Anthropic                          |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_ANTHROPIC`     | 是否允許公開使用 Anthropic 服務    | false  | 否       |
+| `ANTHROPIC_API_KEY`                | Anthropic API 金鑰                 |        | 否       |
+| Cohere                             |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_COHERE`        | 是否允許公開使用 Cohere 服務       | false  | 否       |
+| `COHERE_API_KEY`                   | Cohere API 金鑰                    |        | 否       |
+| Fireworks                          |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_FIREWORKS`     | 是否允許公開使用 Fireworks 服務    | false  | 否       |
+| `FIREWORKS_API_KEY`                | Fireworks API 金鑰                 |        | 否       |
+| Google                             |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_GOOGLE`        | 是否允許公開使用 Google 服務       | false  | 否       |
+| `GOOGLE_API_KEY`                   | Google API 金鑰                    |        | 否       |
+| Groq                               |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_GROQ`          | 是否允許公開使用 Groq 服務         | false  | 否       |
+| `GROQ_API_KEY`                     | Groq API 金鑰                      |        | 否       |
+| Hugging Face                       |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_HUGGINGFACE`   | 是否允許公開使用 Hugging Face 服務 | false  | 否       |
+| `HUGGINGFACE_API_KEY`              | Hugging Face API 金鑰              |        | 否       |
+| Mistral                            |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_MISTRAL`       | 是否允許公開使用 Mistral 服務      | false  | 否       |
+| `MISTRAL_API_KEY`                  | Mistral API 金鑰                   |        | 否       |
+| OpenAI                             |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_OPENAI`        | 是否允許公開使用 OpenAI 服務       | false  | 否       |
+| `OPENAI_API_KEY`                   | OpenAI API 金鑰                    |        | 否       |
+| `OPENAI_API_ENDPOINT`              | OpenAI API 端點                    |        | 否       |
+| Perplexity                         |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_PERPLEXITY`    | 是否允許公開使用 Perplexity 服務   | false  | 否       |
+| `PERPLEXITY_API_KEY`               | Perplexity API 金鑰                |        | 否       |
+| Tavily 搜尋                        |                                    |        |          |
+| `NEXT_PUBLIC_ACCESS_TAVILY_SEARCH` | 是否允許公開使用 Tavily 服務       | false  | 否       |
+| `TAVILY_SEARCH_API_KEY`            | Tavily API 金鑰                    |        | 否       |
+
+## 部署
+
+### 本地部署
+
+1. 複製代碼庫
+
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
+
+2. 安裝依賴
+
+   ```bash
+   cd ChatChat
+   npm install -g pnpm
+   pnpm install
+   ```
+
+3. 建立 `.env.local` 檔案並填寫環境變數
+
+   ```bash
+   cp .env.local.example .env.local
+   ```
+
+4. 運行
+
+   ```bash
+   pnpm run dev
+   ```
+
+### 第三方部署
+
+[![部署到 Railway](https://railway.app/button.svg)](https://railway.app/template/-WWW5r)
+
+[![部署到 Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/okisdev/ChatChat)
+
+### 使用 Docker 部署
+
+1. 複製代碼庫
+
+   ```bash
+   git clone https://github.com/okisdev/ChatChat.git
+   ```
+
+2. 運行以下指令來建立映像
+
+   ```bash
+   docker build -t chatchat .
+   docker run -p 3000:3000 chatchat
+   ```
+
+或者使用 Docker Hub 上的映像
+
+```bash
+docker run -p 3000:3000 ghcr.io/okisdev/chatchat:latest
+```

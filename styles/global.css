@@ -3,3 +3,63 @@
 @import 'fumadocs-ui/css/preset.css';
 
 @source '../node_modules/fumadocs-ui/dist/**/*.js';
+
+:root {
+  /* Colors */
+  --background: #ffffff;
+  --foreground: #171717;
+  --pattern-color: rgba(0, 0, 0, 0.02);
+  --pattern-size: 30px;
+  --color-primary: #171717;
+  --color-secondary: #404040;
+  --color-tertiary: #737373;
+  --color-muted: #a3a3a3;
+  --color-accent: #ff6b00;
+  --color-accent-text: #fff5eb;
+
+  /* Font Sizes */
+  --text-h1: 2.25rem;
+  --text-h2: 1.875rem;
+  --text-h3: 1.5rem;
+  --text-h4: 1.25rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+    --pattern-color: rgba(255, 255, 255, 0.02);
+
+    /* Colors - Dark Mode */
+    --color-primary: #ffffff;
+    --color-secondary: #94949d;
+    --color-tertiary: #71717a;
+    --color-muted: #52525b;
+    --color-accent: #ff6b00;
+    --color-accent-text: #ffffff;
+  }
+}
+
+body {
+  color: var(--color-primary);
+  background: var(--background);
+  background-image: linear-gradient(45deg, var(--pattern-color) 25%, transparent 25%), linear-gradient(-45deg, var(--pattern-color) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--pattern-color) 75%), linear-gradient(-45deg, transparent 75%, var(--pattern-color) 75%);
+  background-size: var(--pattern-size) var(--pattern-size);
+  background-position: 0 0, 0 calc(var(--pattern-size) / 2), calc(var(--pattern-size) / 2) calc(var(--pattern-size) / -2), calc(var(--pattern-size) / 2) 0;
+}
