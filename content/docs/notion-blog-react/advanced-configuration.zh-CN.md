@@ -61,11 +61,11 @@ description: 进阶配置
 
   - `shown: true` (默认)
 
-    ![global.footer.poweredByVercel.shown.true.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
+    ![global.footer.poweredByVercel.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.true.png)
 
   - `shown: false`
 
-    ![global.footer.poweredByVercel.shown.false.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
+    ![global.footer.poweredByVercel.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.poweredByVercel.shown.false.png)
 
 - themeSwitcher:
 
@@ -73,11 +73,11 @@ description: 进阶配置
 
   - `shown: true` (默认)
 
-    ![global.footer.themeSwitcher.shown.true.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
+    ![global.footer.themeSwitcher.shown.true.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.true.png)
 
   - `shown: false`
 
-    ![global.footer.themeSwitcher.shown.false.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
+    ![global.footer.themeSwitcher.shown.false.png](/docs/notion-blog-react/advanced-configuration/global.footer.themeSwitcher.shown.false.png)
 
 ## 主页
 
@@ -87,11 +87,11 @@ description: 进阶配置
 
 - `shown: true` (默认)
 
-  ![header.avatar.shown.true.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
+  ![header.avatar.shown.true.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.true.png)
 
 - `shown: false`
 
-  ![header.avatar.shown.false.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
+  ![header.avatar.shown.false.png](/docs/notion-blog-react/advanced-configuration/header.avatar.shown.false.png)
 
 ### Blog Card 信息详情显示模式
 
@@ -99,11 +99,11 @@ description: 进阶配置
 
 - `mode: 0`
 
-  ![home.blog.card.mode.0.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
+  ![home.blog.card.mode.0.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.0.png)
 
 - `mode: 1` (默认)
 
-  ![home.blog.card.mode.1.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
+  ![home.blog.card.mode.1.png](/docs/notion-blog-react/advanced-configuration/home.blog.card.mode.1.png)
 
 ### Blog Card 信息详情显示日期 - 区域设置
 
@@ -121,11 +121,11 @@ description: 进阶配置
 
 - `shown: true` (默认)
 
-  ![posts.collection.shown.true.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
+  ![posts.collection.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.true.png)
 
 - `shown: false`
 
-  ![posts.collection.shown.false.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
+  ![posts.collection.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.collection.shown.false.png)
 
 ### Table of Content
 
@@ -133,8 +133,8 @@ description: 进阶配置
 
 - `shown: true` (默认)
 
-  ![posts.toc.shown.true.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
+  ![posts.toc.shown.true.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.true.png)
 
 - `shown: false`
 
-  ![posts.toc.shown.false.png](https://cdn.harrly.com/web/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)
+  ![posts.toc.shown.false.png](/docs/notion-blog-react/advanced-configuration/posts.toc.shown.false.png)

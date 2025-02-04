@@ -1,14 +1,9 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
+import { createI18nMiddleware } from 'fumadocs-core/i18n';
+import { i18n } from './lib/i18n';
 
-export function middleware(req: NextRequest) {
-  if (req.nextUrl.pathname === '/docs') {
-    return NextResponse.redirect(new URL('/', req.url));
-  }
-
-  return NextResponse.next();
-}
+export default createI18nMiddleware(i18n);
 
 export const config = {
-  matcher: '/docs',
+  // Matcher ignoring `/_next/` and `/api/`
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 };

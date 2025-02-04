@@ -1,9 +1,5 @@
 {
-  "cSpell.words": [
-    "Callout",
-    "Groq",
-    "HUGGINGFACE",
-    "nextra",
-    "Tavily"
-  ]
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  }
 }

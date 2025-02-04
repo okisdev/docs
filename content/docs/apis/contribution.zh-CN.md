@@ -1,32 +1,32 @@
 ---
-title: GitHub Contribution API Reference
-description: GitHub Contribution API Reference
+title: GitHub 贡献 API 参考
+description: GitHub 贡献 API 参考
 ---
 
-## What is this
+## 这是什么
 
-okisdev GitHub Contribution API
+okisdev GitHub 贡献 API
 
-## Endpoint
+## 端点
 
-### Base URL
+### 基础 URL
 
 `https://api.harrly.com`
 
 ### `GET /api/github/contribution`
 
-okisdev GitHub Contribution
+okisdev GitHub 贡献
 
-## Query Parameters
+## 查询参数
 
-| Parameter  | Type   | Required | Description                                                |
-| ---------- | ------ | -------- | ---------------------------------------------------------- |
-| `username` | string | Yes      | The GitHub username of the user whose contributions to get |
-| `year`     | string | Yes      | The year for which to get the contributions                |
+| 参数       | 类型   | 必需 | 描述                       |
+| ---------- | ------ | ---- | -------------------------- |
+| `username` | string | 是   | 要获取贡献的 GitHub 用户名 |
+| `year`     | string | 是   | 要获取贡献的年份           |
 
-## Response
+## 响应
 
-### Success Response
+### 成功响应
 
 ```json
 {
@@ -54,14 +54,14 @@ okisdev GitHub Contribution
 }
 ```
 
-### Error Response
+### 错误响应
 
-If the required query parameters are not provided, the API will return an HTTP 400 Bad Request response with an error message.
+如果未提供必需的查询参数，API 将返回 HTTP 400 Bad Request 响应和错误信息。
 
 ```json
 {
-  "error": "No username and year provided."
+  "error": "未提供用户名和年份。"
 }
 ```
 
-If there is an error while retrieving the contributions, the API will return an HTTP 500 Internal Server Error response.
+如果在获取贡献时出现错误，API 将返回 HTTP 500 Internal Server Error 响应。

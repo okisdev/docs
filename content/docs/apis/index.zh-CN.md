@@ -1,12 +1,12 @@
 ---
-title: API Documentation
-description: API Documentation
+title: API 文档
+description: API 文档
 ---
 
-## What is this
+## 这是什么
 
-This is a documentation of all API Reference of the okisdev API.
+这是 okisdev API 的所有 API 参考文档。
 
-If you have any questions, please feel free to ask via [email](mailto:hi@okis.dev) or [Twitter](https://twitter.com/okisdev).
+如果您有任何问题，请随时通过 [邮件](mailto:hi@okis.dev) 或 [Twitter](https://twitter.com/okisdev) 联系我们。
 
-Please select from the sidebar to see the API Reference.
+请从侧边栏选择查看 API 参考文档。

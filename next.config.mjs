@@ -1,18 +1,24 @@
-import { remarkImage } from 'fumadocs-core/mdx-plugins';
-import createMDX from 'fumadocs-mdx/config';
+import { createMDX } from 'fumadocs-mdx/next';
 
-const withMDX = createMDX({
-  mdxOptions: {
-    lastModifiedTime: true,
-    remarkPlugins: [remarkImage],
-  },
-});
+const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
+  redirects: async () => [
+    {
+      source: '/docs',
+      destination: '/docs/apis',
+      permanent: true,
+    },
+  ],
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.harrly.com',
+      },
+    ],
   },
 };
 

@@ -1,0 +1,132 @@
+---
+title: API 參考 (開發中)
+description: API 參考 (開發中)
+---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+<Callout type='info'>
+
+基礎 URL: https://tube.okis.dev
+
+</Callout>
+
+## 線路
+
+### 獲取特定線路
+
+**接口：** /api/line/search
+
+**描述：** 使用此接口通過線路名稱或線路 ID 搜索特定線路。
+
+**HTTP 方法：** `GET`
+
+**請求參數：**
+
+| 參數   | 類型   | 是否必需                          | 描述             |
+| ------ | ------ | --------------------------------- | ---------------- |
+| `line` | string | 是（`line` 或 `id` 必須提供一個） | 要搜索的線路名稱 |
+| `id`   | string | 是（`line` 或 `id` 必須提供一個） | 要搜索的線路 ID  |
+
+**響應格式：**
+
+API 將返回一個包含符合搜索條件的線路對象數組的 JSON 對象。每個線路對象包含以下字段：
+
+| 字段 | 類型 | 描述 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+
+**示例請求：**
+
+`GET https://tube.okis.dev/api/line/search?id=bakerloo`
+
+**示例響應：**
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "bakerloo",
+    "name": "Bakerloo",
+    "mode": "tube",
+    "checked": false,
+    "routes": [
+        {
+            "name": "Elephant & Castle  &harr;  Harrow & Wealdstone",
+            "naptanIds": [
+                "940GZZLUEAC",
+                // ... 其他站點 ID
+            ],
+            "serviceType": "Regular",
+            "departure": "Elephant & Castle",
+            "destination": "Harrow & Wealdstone"
+        }
+        // ... 其他路線
+    ]
+}
+```
+
+## 車站
+
+### 獲取特定車站
+
+**接口：** /api/station/search
+
+**描述：** 使用此接口通過車站名稱或車站 ID 搜索特定車站。
+
+**HTTP 方法：** `GET`
+
+**請求參數：**
+
+| 參數      | 類型   | 是否必需                             | 描述             |
+| --------- | ------ | ------------------------------------ | ---------------- |
+| `station` | string | 是（`station` 或 `id` 必須提供一個） | 要搜索的車站名稱 |
+| `id`      | string | 是（`station` 或 `id` 必須提供一個） | 要搜索的車站 ID  |
+
+**響應格式：**
+
+API 將返回一個包含符合搜索條件的車站對象數組的 JSON 對象。每個車站對象包含以下字段：
+
+| 字段 | 類型 | 描述 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+
+**示例請求：**
+
+`GET https://tube.okis.dev/api/station/search?id=940GZZLUEAC`
+
+**示例響應：**
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "940GZZLUEAC",
+    "name": "Elephant & Castle",
+    "coordinates": [-0.099185, 51.494505],
+    "zone": "1+2",
+    "lines": [
+        {
+            "name": "Bakerloo"
+        },
+        {
+            "name": "Northern"
+        },
+        {
+            "name": "National Rail"
+        }
+    ],
+    "wifi": true,
+    "toilets": false,
+    "platforms": [
+        // ... 月台信息
+    ],
+    "checked": false,
+    "naptan_id": "HUBEPH",
+    "modes": ["bus", "national-rail", "tube"]
+}
+```

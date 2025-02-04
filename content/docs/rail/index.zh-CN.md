@@ -1,26 +1,26 @@
 ---
-title: Rail Documentation (Work in Progress)
-description: Rail Documentation (Work in Progress)
+title: Rail 文档（开发中）
+description: Rail 文档（开发中）
 ---
 
-## What is this
+## 这是什么？
 
-This is a documentation of the Rail. It is a work in progress, and is not complete. If you have any questions, please feel free to ask via [email](mailto:hi@okis.dev) or [Twitter](https://twitter.com/okisdev).
+这是 Rail 的文档。目前仍在开发中，尚未完成。如果你有任何问题，欢迎通过 [邮件](mailto:hi@okis.dev) 或 [Twitter](https://twitter.com/okisdev) 联系我们。
 
-## TL;DR
+## 简介
 
-## How to use?
+## 如何使用？
 
-### Desktop
+### 桌面版
 
-- Just visit [rail.okis.dev](https://rail.okis.dev) and you will be able to see the status of the rail lines.
+- 只需访问 [rail.okis.dev](https://rail.okis.dev)，即可查看铁路线路的状态。
 
-### Mobile
+### 手机版
 
-We use [PWA](https://en.wikipedia.org/wiki/Progressive_web_application) to make the website work on mobile. You can add the website to your home screen and use it as a native app.
+我们使用 [PWA](https://en.wikipedia.org/wiki/Progressive_web_application) 技术使网站能在手机上运行。你可以将网站添加到主屏幕，像使用原生应用程序一样使用它。
 
-Please see [this article](https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html) for more information.
+详情请参阅[这篇文章](https://www.cdc.gov/niosh/mining/content/hearingloss/installPWA.html)。
 
-## How to contribute?
+## 如何贡献？
 
-## License
+## 授权条款

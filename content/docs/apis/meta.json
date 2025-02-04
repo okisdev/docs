@@ -1,5 +1,8 @@
 {
-  "title": "Chat Chat",
+  "title": "APIs",
   "root": true,
-  "pages": ["index", "contribution"]
+  "pages": [
+    "index",
+    "contribution"
+  ]
 }

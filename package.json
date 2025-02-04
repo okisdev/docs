@@ -3,34 +3,31 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "clean": "git clean -fxd",
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "start": "next start",
-    "prettier:check": "prettier --check . --config prettier.config.js",
-    "prettier:write": "prettier --write ."
+    "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
-    "axios": "^1.7.3",
-    "fumadocs-core": "13.0.5",
-    "fumadocs-mdx": "9.0.0",
-    "fumadocs-ui": "13.0.5",
-    "next": "^14.2.5",
-    "prettier": "^3.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "@biomejs/biome": "^1.9.4",
+    "fumadocs-core": "15.0.2",
+    "fumadocs-mdx": "11.4.1",
+    "fumadocs-ui": "15.0.2",
+    "next": "15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "turbo": "^2.4.0"
   },
   "devDependencies": {
+    "@fumadocs/cli": "^0.0.7",
+    "@tailwindcss/postcss": "^4.0.3",
     "@types/mdx": "^2.0.13",
-    "@types/node": "22.1.0",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.40",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "react-icons": "^5.2.1",
-    "tailwindcss": "^3.4.7",
-    "typescript": "^5.5.4"
+    "@types/node": "22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3",
+    "typescript": "^5.7.3"
   },
-  "packageManager": "bun@1.1.21"
+  "packageManager": "bun@1.2.2"
 }

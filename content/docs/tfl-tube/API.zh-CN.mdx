@@ -1,4 +1,132 @@
 ---
-title: API Reference (Work in Progress)
-description: API Reference (Work in Progress)
+title: API 参考 (开发中)
+description: API 参考 (开发中)
 ---
+
+import { Callout } from 'fumadocs-ui/components/callout';
+
+<Callout type='info'>
+
+基础 URL: https://tube.okis.dev
+
+</Callout>
+
+## 线路
+
+### 获取特定线路
+
+**接口：** /api/line/search
+
+**描述：** 使用此接口通过线路名称或线路 ID 搜索特定线路。
+
+**HTTP 方法：** `GET`
+
+**请求参数：**
+
+| 参数   | 类型   | 是否必需                          | 描述             |
+| ------ | ------ | --------------------------------- | ---------------- |
+| `line` | string | 是（`line` 或 `id` 必须提供一个） | 要搜索的线路名称 |
+| `id`   | string | 是（`line` 或 `id` 必须提供一个） | 要搜索的线路 ID  |
+
+**响应格式：**
+
+API 将返回一个包含符合搜索条件的线路对象数组的 JSON 对象。每个线路对象包含以下字段：
+
+| 字段 | 类型 | 描述 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+
+**示例请求：**
+
+`GET https://tube.okis.dev/api/line/search?id=bakerloo`
+
+**示例响应：**
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "bakerloo",
+    "name": "Bakerloo",
+    "mode": "tube",
+    "checked": false,
+    "routes": [
+        {
+            "name": "Elephant & Castle  &harr;  Harrow & Wealdstone",
+            "naptanIds": [
+                "940GZZLUEAC",
+                // ... 其他站点 ID
+            ],
+            "serviceType": "Regular",
+            "departure": "Elephant & Castle",
+            "destination": "Harrow & Wealdstone"
+        }
+        // ... 其他路线
+    ]
+}
+```
+
+## 车站
+
+### 获取特定车站
+
+**接口：** /api/station/search
+
+**描述：** 使用此接口通过车站名称或车站 ID 搜索特定车站。
+
+**HTTP 方法：** `GET`
+
+**请求参数：**
+
+| 参数      | 类型   | 是否必需                             | 描述             |
+| --------- | ------ | ------------------------------------ | ---------------- |
+| `station` | string | 是（`station` 或 `id` 必须提供一个） | 要搜索的车站名称 |
+| `id`      | string | 是（`station` 或 `id` 必须提供一个） | 要搜索的车站 ID  |
+
+**响应格式：**
+
+API 将返回一个包含符合搜索条件的车站对象数组的 JSON 对象。每个车站对象包含以下字段：
+
+| 字段 | 类型 | 描述 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+
+**示例请求：**
+
+`GET https://tube.okis.dev/api/station/search?id=940GZZLUEAC`
+
+**示例响应：**
+
+```json
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "id": "940GZZLUEAC",
+    "name": "Elephant & Castle",
+    "coordinates": [-0.099185, 51.494505],
+    "zone": "1+2",
+    "lines": [
+        {
+            "name": "Bakerloo"
+        },
+        {
+            "name": "Northern"
+        },
+        {
+            "name": "National Rail"
+        }
+    ],
+    "wifi": true,
+    "toilets": false,
+    "platforms": [
+        // ... 月台信息
+    ],
+    "checked": false,
+    "naptan_id": "HUBEPH",
+    "modes": ["bus", "national-rail", "tube"]
+}
+```
