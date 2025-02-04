@@ -9,14 +9,19 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  */
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    // can be JSX too!
-    title: 'okisdev docs',
+    title: "okisdev's docs",
   },
   links: [
     {
-      text: 'Documentation',
-      url: '/docs',
-      active: 'nested-url',
+      text: 'Harry Yep (@okisdev)',
+      url: 'https://okis.dev',
+      active: 'url',
+    },
+    {
+      text: 'GitHub',
+      url: 'https://github.com/okisdev',
+      active: 'url',
     },
   ],
+  i18n: true,
 };
