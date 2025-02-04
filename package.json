@@ -1,23 +1,25 @@
 {
   "name": "okisdev-docs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev",
+    "dev": "next dev --turbo",
     "start": "next start",
     "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "fumadocs-core": "15.0.2",
+    "fumadocs-mdx": "11.4.1",
+    "fumadocs-ui": "15.0.2",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "fumadocs-ui": "15.0.2",
-    "fumadocs-core": "15.0.2",
-    "fumadocs-mdx": "11.4.1"
+    "turbo": "^2.4.0"
   },
   "devDependencies": {
-    "@types/node": "22.13.0",
+    "@types/node": "22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "typescript": "^5.7.3",
@@ -25,5 +27,6 @@
     "@tailwindcss/postcss": "^4.0.3",
     "tailwindcss": "^4.0.3",
     "postcss": "^8.5.1"
-  }
+  },
+  "packageManager": "bun@1.2.2"
 }
