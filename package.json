@@ -19,7 +19,7 @@
     "turbo": "^2.4.0"
   },
   "devDependencies": {
-    "@fumadocs/cli": "^0.0.7",
+    "@fumadocs/cli": "^0.0.8",
     "@tailwindcss/postcss": "^4.0.3",
     "@types/mdx": "^2.0.13",
     "@types/node": "22.13.1",
