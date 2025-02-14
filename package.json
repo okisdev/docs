@@ -12,7 +12,7 @@
     "@biomejs/biome": "^1.9.4",
     "fumadocs-core": "15.0.2",
     "fumadocs-mdx": "11.4.1",
-    "fumadocs-ui": "15.0.2",
+    "fumadocs-ui": "15.0.7",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
